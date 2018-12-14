@@ -1,0 +1,1 @@
+* [配置](view/config/config.md)

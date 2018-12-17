@@ -1,4 +1,4 @@
-# javascript 其他
+# JavaScript 其他
 
 ##### 1. 原生ajax请求：
 

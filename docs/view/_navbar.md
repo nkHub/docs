@@ -1,5 +1,5 @@
 * 分类
-  * [web相关](view/web/web.md)
+  * [web](view/web/web.md)
   * [小程序](view/mini/mini.md)
   * [App](view/app/app.md)
   * [后端](view/backend/backend.md)

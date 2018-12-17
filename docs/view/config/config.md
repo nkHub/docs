@@ -32,3 +32,24 @@
     data: { msg: '使用命令docsify serve初始化该文档' }
   })
 </script>
+
+
+<!-- <vuep template="#example"></vuep>
+
+<script v-pre type="text/x-template" id="example">
+  <template>
+    <div>{{ msg }}</div>
+  </template>
+
+  <script>
+    module.exports = {
+
+        data: function () {
+            return {
+                name: 'Vue',
+                msg: '使用命令docsify serve初始化该文档'
+            }
+        }
+    }
+  </script>
+</script> -->

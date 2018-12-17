@@ -2,8 +2,11 @@
 * @Author: NiKai
 * @Date:   2018-12-06 17:57:39
 * @Last Modified by:   NiKai
-* @Last Modified time: 2018-12-06 17:57:58
+* @Last Modified time: 2018-12-17 13:55:54
 */
 .fcr{
     color: red;
+}
+[v-cloak]{
+    display: none;
 }

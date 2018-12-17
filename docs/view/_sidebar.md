@@ -1,4 +1,4 @@
-* [web相关](view/web/web.md)
+* [web](view/web/web.md)
   * [HTML5](view/web/HTML5.md)
   * [CSS](view/web/CSS.md)
   * [JavaScript](view/web/javascript/JavaScript.md)

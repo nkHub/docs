@@ -18,5 +18,4 @@
   * [monogoDB](view/database/monogoDB.md)
   * [mySql](view/database/mySql.md)
 * [其他](view/else/else.md)
-  * [其他](view/else/else.md)
 * [配置](view/config/config.md)

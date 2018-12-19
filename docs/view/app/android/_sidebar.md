@@ -1,3 +1,6 @@
 * [android](view/app/android/android.md)
   * [activity](view/app/android/activity.md)
+  * [service](view/app/android/service.md)
+  * [boardcast](view/app/android/boardcast.md)
+  * [content](view/app/android/content.md)
 * [配置](view/config/config.md)

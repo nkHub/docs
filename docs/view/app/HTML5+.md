@@ -1,1 +1,1 @@
-# HTML5+
+# [HTML5+](http://www.html5plus.org/doc/zh_cn/accelerometer.html)

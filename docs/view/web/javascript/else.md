@@ -1,6 +1,6 @@
 # JavaScript 其他
 
-##### 1. 原生ajax请求：
+##### 1. [原生ajax请求](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)：
 
 ```
   var config = {

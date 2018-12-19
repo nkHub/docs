@@ -1,4 +1,5 @@
-* [HTML5+](view/app/HTML5+.md)
-* [react-native](view/app/react-native.md)
+* [HTML5+](view/app/HTML5+/HTML5+.md)
+* [react-native](view/app/react-native/react-native.md)
+* [flutter](view/app/flutter/flutter.md)
 * [android](view/app/android/android.md)
 * [配置](view/config/config.md)

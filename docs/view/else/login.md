@@ -43,8 +43,14 @@ if(isset($_POST['type'])){
     switch ($_POST['type']) {
         case 'weixin':
             //获取openid
-            $appId = 'wxf28270d5571d706f';
-            $WXscrect = 'aa99a239f5de142ffe613fc933211ce9';
+            if($_POST['isWeChat'] == 'false'){ //pc端扫码登录
+                $appId = '**************';
+                $WXscrect = '********************';
+            }else{
+                $appId = '**************';
+                $WXscrect = '********************';
+            }
+
             $accessTokenUrl = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='
             .$appId.'&secret='.$WXscrect.'&code='.$_POST['code'].
             '&grant_type=authorization_code';
@@ -80,8 +86,8 @@ if(isset($_POST['type'])){
             echo json_encode($reVal);
         break;
         case 'weibo':
-            $clientId = '4168942665';
-            $weiboScrect = '0cd763e900ff627dba140ca31e3e516f';
+            $clientId = '41689426**';
+            $weiboScrect = '0cd763e900ff627dba140ca31e3e51**';
             $weiboTokenUrl = 'https://api.weibo.com/oauth2/access_token?client_id='
             .$clientId.'&client_secret='
             .$weiboScrect.'&grant_type=authorization_code&redirect_uri='.

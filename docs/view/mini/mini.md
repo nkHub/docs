@@ -30,3 +30,8 @@
         }
     });
 ```
+
+* 注意
+  - cover-view的CSS中border与伪元素属性无效
+  - CSS中transition属性有时会失效(原因未知)
+  - cover-view不支持box-shadow属性

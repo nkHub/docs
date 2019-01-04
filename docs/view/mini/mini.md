@@ -9,7 +9,7 @@
 
 
 ```
-    const getPage = (route = 'pages/carpool/carpool') => {
+    const getPage = (route = 'pages/index/index') => {
       let pages = getCurrentPages();
       let tmpPage = null;
       pages.forEach(page=>{

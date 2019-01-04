@@ -54,12 +54,12 @@
     </head>
 
     //PC端
-    连接跳转
+    https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title=24国&url=url&desc=desc&summary=summary&pics=pics;
 ```
 
 #### 3. 微博
 
 ```
     //PC端
-    连接跳转
+    http://v.t.sina.com.cn/share/share.php?title=title&url=url&content=utf-8&sourceUrl=url&pic=pic;
 ```

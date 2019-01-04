@@ -26,6 +26,8 @@
   - [ ] bim
   - [ ] lim
 
+  https://help.aliyun.com/document_detail/59083.html?spm=5176.10173289.107.1.73ee2e77Rk5hDi#windows
+
 <script>
   new Vue({
     el: '#main',

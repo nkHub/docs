@@ -65,3 +65,11 @@
     3. react
     //直接使用this.props.children调取
 ```
+
+
+#### 3. 其他
+
+```
+    DOMException: Failed to execute 'insertBefore' on 'Node'报错，使用v-show替换v-if；
+
+```

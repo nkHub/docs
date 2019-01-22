@@ -4,7 +4,7 @@
 
 ?> 最后一次更新于：2018-01-04
 
-?> 更新内容: [在轻量应用服务器中部署nodeJS项目](view/backend/nodeJS.md)
+?> 更新内容: [在轻量应用服务器中部署nodeJS项目](view/backend/nodejs.md)
 
 * 工具
     - [json解析](https://www.json.cn/)

@@ -13,7 +13,7 @@
     - [base64](http://imgbase64.duoshitong.com/)
 
 * 个人项目地址
-    - iTry官网
+    - [iTry官网](http://nikai.site/itry/index.html)
     - [24国官网](http://www.24country.com/#/home)
     - 24国app
     - [挖机达人app](https://sj.qq.com/myapp/detail.htm?apkName=com.pitking.operate)

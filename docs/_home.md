@@ -26,7 +26,7 @@
 
 * 个人测试demo地址
     - 商城小程序demo
-    - [nodeJS后台](http://nikai.site/)
+    - [nodeJS后台(暂时啥都没有)](http://nikai.site/)
     - 三方授权分享测试(更换服务器暂时失效)
     - [安卓测试demo](https://github.com/nkHub/androidTest)
 

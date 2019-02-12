@@ -17,10 +17,10 @@
     - [24国官网](http://www.24country.com/#/home)
     - 24国app
     - 挖机达人app
-    - 明规则app
+    - 明规则app(部分)
     - SpeedoApp(ipad展示app)
     - 51合乘小程序
-    - 无忧宝(微信公众号)
+    - [无忧宝(微信公众号)](http://www.wuyuhappy.com)
     - [微信请柬(微信网页)](http://h5.ziyouse.cn/1_5b3f3ac02d951.html)
     - [邮储抽奖(微信网页)](http://www.yiyisoft.net/PostPrizes/www/redirect.html)
 

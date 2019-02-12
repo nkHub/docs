@@ -16,8 +16,8 @@
     - iTry官网
     - [24国官网](http://www.24country.com/#/home)
     - 24国app
-    - 挖机达人app
-    - 明规则app(部分)
+    - [挖机达人app](https://sj.qq.com/myapp/detail.htm?apkName=com.pitking.operate)
+    - [明规则app(部分)](https://sj.qq.com/myapp/detail.htm?apkName=com.mingrule.operate)
     - SpeedoApp(ipad展示app)
     - 51合乘小程序
     - [无忧宝(微信公众号)](http://www.wuyuhappy.com)

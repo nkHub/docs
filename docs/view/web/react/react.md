@@ -119,7 +119,7 @@ PureComponent组件相对于Component，已完成props与state的浅对比，优
 ```
 
 
-##### 6. ref（不推荐）：
+##### 6. ref：
 
 ```
   ...

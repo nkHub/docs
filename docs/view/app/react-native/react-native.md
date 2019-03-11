@@ -12,4 +12,3 @@
     - [Ant Design Mobile](https://mobile.ant.design/)
     - [React Navigation](https://reactnavigation.org/docs/zh-Hans/getting-started.html)
     - [android启动页](http://www.jianshu.com/p/da658aceeb44)
-

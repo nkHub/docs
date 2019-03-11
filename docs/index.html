@@ -45,9 +45,10 @@
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
   <script>
-    if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('sw.js')
-    }
+    //经常更新不变，所以去除serviceWorker本地缓存
+    // if (typeof navigator.serviceWorker !== 'undefined') {
+    //   navigator.serviceWorker.register('sw.js')
+    // }
   </script>
 </body>
 </html>

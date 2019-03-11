@@ -1,12 +1,10 @@
 # 首页
 
-!>  **该文档仅作为个人备忘记录(大多来源于网络与个人总结)** 。
+!>  **该文档仅作为个人备忘记录** 。
 
-?> 最后一次更新于：2019-03-11
+?> 更新：2019-03-11，[git](view/else/git.md)
 
-?> 更新内容: [git](view/else/git.md)
-
-* 工具
+* 常用工具
     - [json解析](https://www.json.cn/)
     - [caniuse](https://caniuse.com/)
     - [色值转换](https://www.sioe.cn/yingyong/yanse-rgb-16/)

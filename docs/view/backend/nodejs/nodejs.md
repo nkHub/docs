@@ -1,6 +1,6 @@
-# [nodeJS](http://nodejs.cn/api/)
+# [服务器搭建](http://nodejs.cn/api/)
 
-
+##### [搭建参照地址](https://segmentfault.com/a/1190000013740262?utm_source=tag-newest)
 ##### [putty远程连接服务器](https://help.aliyun.com/document_detail/59083.html?spm=5176.10173289.107.1.73ee2e77Rk5hDi#windows);
 
 ##### [linux命令](http://www.runoob.com/linux/linux-command-manual.html);

@@ -30,7 +30,7 @@
 <script>
   new Vue({
     el: '#main',
-    data: { msg: '使用命令docsify serve初始化该文档' }
+    data: { msg: '使用命令docsify serve docs初始化该文档' }
   })
 </script>
 

@@ -12,7 +12,7 @@
     - [色值转换](https://www.sioe.cn/yingyong/yanse-rgb-16/)
     - [base64](http://imgbase64.duoshitong.com/)
 
-* 个人项目地址
+<!-- * 个人项目地址
     - [iTry官网](http://nikai.site/itry/index.html)
     - [24国官网](http://www.24country.com/#/home)
     - 24国app
@@ -28,5 +28,5 @@
     - 商城小程序demo
     - [nodeJS后台(暂时啥都没有)](http://nikai.site/)
     - 三方授权分享测试(更换服务器暂时失效)
-    - [安卓测试demo](https://github.com/nkHub/androidTest)
+    - [安卓测试demo](https://github.com/nkHub/androidTest) -->
 

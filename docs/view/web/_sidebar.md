@@ -1,7 +1,7 @@
 * [web](view/web/web.md)
 * [CSS](view/web/CSS.md)
 * [JavaScript](view/web/javascript/JavaScript.md)
-* [Jquery](view/web/JQuery.md)
+* [Jquery](view/web/jquery.md)
 * [vue](view/web/vue/vue.md)
 * [react](view/web/react/react.md)
 * [npm相关](view/web/npm/npm.md)

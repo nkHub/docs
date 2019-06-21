@@ -142,8 +142,6 @@ generator类似于async, await换位yield，返回Promise对象。
 
 '编译时加载/静态加载'不同于commonJS的'运行时加载'。
 
-
-
 ```
   import * as name from 'fs'; //导入所有数据
   import { name } from 'fs'; //导入所有数据

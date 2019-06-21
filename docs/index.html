@@ -32,6 +32,16 @@
         placeholder: '搜索',
         noData: '找不到结果!',
         depth: 6
+      },
+      copyCode: {
+        buttonText : '复制到粘贴板',
+        errorText  : '错误',
+        successText: '复制成功'
+      },
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: true
       }
     }
   </script>
@@ -44,6 +54,8 @@
   <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <script>
     //经常更新不变，所以去除serviceWorker本地缓存
     // if (typeof navigator.serviceWorker !== 'undefined') {

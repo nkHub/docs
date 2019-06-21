@@ -28,3 +28,22 @@
     - 三方授权分享测试(更换服务器暂时失效)
     - [安卓测试demo](https://github.com/nkHub/androidTest) -->
 
+<!-- !>  **vue测试** 
+
+<vuep template="#example"></vuep>
+
+<script v-pre type="text/x-template" id="example">
+<template>
+  <div>{{msg}}</div>
+</template>
+
+<script>
+  module.exports = {
+    data() {
+      return {
+        msg: 'Vue'
+      }
+    }
+  }
+</script>
+</script> -->

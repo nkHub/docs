@@ -62,6 +62,11 @@
   ::-webkit-scrollbar-corner
   <!-- 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件 -->
   ::-webkit-resizer
+
+  //清除滚动条
+  selector::-webkit-scroll-bar{
+    display: none;
+  }
 ```
 
 ##### 8. flex宽度失效：
@@ -73,5 +78,5 @@
 ##### 9. css Hack：
 
 ```
-  子栏目添加flex:0 0 auto;属性
+  空
 ```

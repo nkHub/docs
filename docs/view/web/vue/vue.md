@@ -1,41 +1,7 @@
 # [vue](https://cn.vuejs.org/)
 
-#### 1. vue-cli3创建项目
 
-```
-    vue create project
-```
-
-#### 2. mixins
-
-与组件具有同样的生命周期，组件混入后将与组件的对应生命周期合并；
-
-```
-    //mixins.js
-    export default {
-        created(){
-
-        },
-        methods:{
-
-        }
-    }
-
-    //components.js
-    import mixin from '@/mixins/mixins.js';
-    export default {
-        name: 'test',
-        mixins: [mixin],
-        created(){
-            ...
-        },
-        components:{
-            ...
-        }
-    }
-```
-
-#### 2. vue组件插槽、react与小程序区别
+#### 1. vue组件插槽、react与小程序区别
 
 ```
     1. vue组件
@@ -67,7 +33,7 @@
 ```
 
 
-#### 3. 其他
+#### 2. 其他
 
 ```
     DOMException: Failed to execute 'insertBefore' on 'Node'报错，使用v-show替换v-if；

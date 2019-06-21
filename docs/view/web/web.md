@@ -12,12 +12,3 @@
     - babel
 
 
-
-##### 2. IOS微信内自动播放：
-
-```
-  wx.ready(function(){
-    audio.play();
-  });
-```
-

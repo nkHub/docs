@@ -10,28 +10,20 @@
 
 ```
     const getPage = (route = 'pages/index/index') => {
-      let pages = getCurrentPages();
-      let tmpPage = null;
-      pages.forEach(page=>{
-        if (page.route == route){
-          return  tmpPage = page;
-        }
-      });
-      return tmpPage;
+      let all = getCurrentPages();
+      for(let i = 0, len = all.length;i < len;i++){
+        if (page.route == route)return all[i];
+      }
+      return null;
     }
 ```
 
 ### 2. 获取组件实例
+必须等组件挂在完成。
 
 ```
-    Page({
-        onLoad:function(){
-            this.selectComponent(组件id);
-        }
-    });
+  Page.selectComponent(组件id);
 ```
 
 * 注意
-  - cover-view的CSS中border与伪元素属性无效
-  - CSS中transition属性有时会失效(原因未知)
-  - cover-view不支持box-shadow属性
+  - cover-view的CSS多属性无效(使用谨慎)

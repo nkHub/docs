@@ -4,6 +4,11 @@
 
 ?> 更新：2019-06-21 整理
 
+##### 下半年flag:
+  * Flutter app实例构建
+  * nodeJs + MongoDB后台搭建
+  * 前端可视化3d方向(D3.js、three.js)
+
 * 常用工具
     - [json解析](https://www.json.cn/)
     - [caniuse](https://caniuse.com/)

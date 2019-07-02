@@ -44,7 +44,13 @@ const getFixedUrl = (req) => {
   }
   return url.href
 }
-
+/**
+ *  @Lifecycle Install
+ *  安装
+ */
+self.addEventListener('install', function () {
+  self.skipWaiting();
+});
 /**
  *  @Lifecycle Activate
  *  New one activated when old isnt being used.

@@ -1,0 +1,46 @@
+/*
+* @Author: NiKai
+* @Date:   2018-12-06 17:57:39
+* @Last Modified by:   NiKai
+* @Last Modified time: 2018-12-17 13:55:54
+*/
+.fcr{
+    color: red;
+}
+[v-cloak]{
+    display: none;
+}
+
+/* vuep样式修改 */
+.vuep{
+    position: relative;
+    padding-top: 240px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.vuep .vuep-editor,
+.vuep .vuep-preview{
+    width: 100%;
+    height: 240px;
+}
+.vuep .vuep-preview{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/* github复制样式修改 */
+.docsify-copy-code-button{
+    padding: .4em .6em!important;
+    font-size: 0.4em!important;
+}
+.docsify-copy-code-button .success,
+.docsify-copy-code-button .error{
+    padding: .3em .3em!important;
+    font-size: .3em!important;
+}
+/* pagination样式 */
+.pagination-item-title{
+    font-size: 1.4em!important;
+}

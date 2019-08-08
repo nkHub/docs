@@ -1,6 +1,6 @@
 # [vue](https://cn.vuejs.org/)
 
-#### 1. 脚手架搭建(未完成)
+#### 1. 脚手架搭建
 
 *   1. npm init 初始化 package.json
 
@@ -124,7 +124,7 @@
 
     module.exports = config;
 ```
-#### 2. 命令行工具(类vue-cli, 未完成)
+#### 2. 命令行工具(类vue-cli)
 
 * 1. npm init 初始化 package.json
 

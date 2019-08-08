@@ -2,19 +2,22 @@
 
 !>  **该文档仅作为个人备忘记录** 。
 
-?> 更新：2019-07-17 vue webpack脚手架搭建
+?> 更新：2019-08-08 [nodejs补充](/view/backend/nodejs/nodejs)
 
-* flag:
+<!-- * flag:
   - Flutter app实例构建
   - nodeJs + MongoDB后台搭建
   - 前端可视化3d方向(D3.js、three.js)
-  - Electron PC工具搭建
+  - Electron PC工具搭建 -->
 
-* 常用工具
+* 常用
+    - [css手册](http://css.doyoe.com/)
+    - [MDN](https://developer.mozilla.org/zh-CN/)
     - [json解析](https://www.json.cn/)
     - [caniuse](https://caniuse.com/)
     - [色值转换](https://www.sioe.cn/yingyong/yanse-rgb-16/)
     - [base64](http://imgbase64.duoshitong.com/)
+    
 
 <!-- * 个人项目地址
     - [iTry官网](http://nikai.site/itry/index.html)

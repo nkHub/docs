@@ -98,16 +98,19 @@ Array.from可将类似格式转换为数组。
     reject();  //异步操作失败
   });
   
-  // 多请求合并后，所有请求完成则执行
+  // 多异步合并后，所有异步完成则执行
   Promise.all(promiseList).then().catch();
 
-  // 多请求合并后，只要有请求完成则执行
+  // 多异步合并后，只要有异步完成则执行
   Promise.race(promiseList).then().catch();
+
+  // 多异步串联执行
+  PromiseList.reduce((accumulator,next) => accumulator.then(() => next()),Promise.resolve());
 ```
 
 ##### 10. Set：
 
-Set不含重复的数据结构，包含add,del,has,clear方法;
+Set不含重复的数据结构，包含add,del,has,clear方法, WeakSet与WeakMap类似但只支持key为对象;
 ```
   [...new Set(array)] 数组去重
 ```
@@ -132,10 +135,13 @@ Map与传统“键-值”相对的“值-值”，数据结构;
 generator类似于async, await换位yield，返回Promise对象。
 
 ```
-  function* name(){
-    yield response;
+  function* Test(){
+    yield response1;
+    yield response2;
+    return;
   }
-  Name().then();
+  Test().next();
+  Test().next();
 ```
 
 ##### 14. 模块:
@@ -149,7 +155,7 @@ generator类似于async, await换位yield，返回Promise对象。
   export default name; //导出
 ```
 
-###### 1.相对于require的区别：
-  
+  相对于require的区别：
   1. 即使在任意位置使用，文件执行时import都会自动提升至起始位置加载，require为任意位置使用与加载；
+  2. 按需加载；
 

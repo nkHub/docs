@@ -1,5 +1,5 @@
 ![logo](assets/pic.jpg ':size=80')
 
-# [docsify](/)
+<!-- # [docsify](/) -->
 
 * [个人文档](/README)

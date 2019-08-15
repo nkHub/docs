@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @version: 1.0.0
+ * @Author: nk
+ * @Date: 2019-08-08 20:24:14
+ * @LastEditTime: 2019-08-15 19:15:20
+ -->
 # ES6
 
 
@@ -105,7 +112,7 @@ Array.from可将类似格式转换为数组。
   Promise.race(promiseList).then().catch();
 
   // 多异步串联执行
-  PromiseList.reduce((accumulator,next) => accumulator.then(() => next()),Promise.resolve());
+  PromiseList.reduce((accumulator,next) => accumulator.then(() => next.then()),Promise.resolve());
 ```
 
 ##### 10. Set：

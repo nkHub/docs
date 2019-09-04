@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @version: 1.0.0
+ * @Author: nk
+ * @Date: 2019-06-24 19:09:24
+ * @LastEditTime: 2019-09-04 20:52:58
+ -->
 # mongodb
 
 [下载](http://dl.mongodb.org/dl/win32/x86_64)
@@ -13,6 +20,9 @@
     如果强制关闭进程，mongodb需要删除data/bin文件夹下mongodb.lock文件，并且在bin文件夹下执行
     ./mongod --repair
     之后重新初始化数据库服务
+    
+    // etc文件夹下执行启动redis
+    redis-server redis.conf
 ```
 
 #### 1. 创建与删除数据库

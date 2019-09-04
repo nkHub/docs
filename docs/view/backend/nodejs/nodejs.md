@@ -1,3 +1,10 @@
+<!--
+ * @Description: 
+ * @version: 1.0.0
+ * @Author: nk
+ * @Date: 2019-08-08 18:11:06
+ * @LastEditTime: 2019-09-04 20:52:47
+ -->
 # [服务器搭建](http://nodejs.cn/api/)
 
 ##### [搭建参照地址](https://segmentfault.com/a/1190000013740262?utm_source=tag-newest)
@@ -15,4 +22,5 @@
     pm2 restart id/name     //重启进程
     pm2 list                //进程列表
     //process.json配置
+
 ```

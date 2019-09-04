@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-09-04 18:02:02
- * @LastEditTime: 2019-09-04 20:10:02
+ * @LastEditTime: 2019-09-04 20:59:01
  -->
 # 环境搭建
 
@@ -52,12 +52,12 @@
 ##### Android Stuido
 
 首选项 => 插件 搜索Flutter与Dart
-![flutter-android-plugins](../../../assets/flutter-android-plugins.jpg)
+![flutter-android-plugins](https://nikai.site/docs/flutter-android-plugins.jpg)
 
 首选项 => 语言与框架 => Flutter或Dart设置sdk路径 
-![flutter-android-set](../../../assets/flutter-android-set.jpg)
+![flutter-android-set](https://nikai.site/docs/flutter-android-set.jpg)
 
 -----
 
 ##### 安装完成
-![flutter-success](../../../assets/flutter-success.jpg)
+![flutter-success](https://nikai.site/docs/flutter-success.jpg)

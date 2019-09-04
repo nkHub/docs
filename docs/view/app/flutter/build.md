@@ -3,15 +3,13 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-09-04 18:02:02
- * @LastEditTime: 2019-09-04 19:11:22
+ * @LastEditTime: 2019-09-04 20:10:02
  -->
 # 环境搭建
 
 -----
 
-### MAC
-
-##### 环境变量
+##### mac环境变量
 
 ```
     open ~/.bash_profile    //打开环境变量配置文件
@@ -53,8 +51,13 @@
 
 ##### Android Stuido
 
-```
-    首选项 => 插件 搜索Flutter与Dart
-    首选项 => 语言与框架 => Flutter或Dart设置sdk路径 
-    
-```
+首选项 => 插件 搜索Flutter与Dart
+![flutter-android-plugins](../../../assets/flutter-android-plugins.jpg)
+
+首选项 => 语言与框架 => Flutter或Dart设置sdk路径 
+![flutter-android-set](../../../assets/flutter-android-set.jpg)
+
+-----
+
+##### 安装完成
+![flutter-success](../../../assets/flutter-success.jpg)

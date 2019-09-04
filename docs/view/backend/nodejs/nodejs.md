@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-08 18:11:06
- * @LastEditTime: 2019-09-04 20:52:47
+ * @LastEditTime: 2019-09-05 00:39:51
  -->
 # [服务器搭建](http://nodejs.cn/api/)
 
@@ -23,4 +23,14 @@
     pm2 list                //进程列表
     //process.json配置
 
+    pm2 save                //保存进程列表
+    pm2 startup             //开机自启进程列表
+```
+
+---------------
+
+```
+    node进程自启： pm2自启
+    mongodb进程自启： /etc/rc.d/rc.local 填入启动命令、执行chmod +x /etc/rc.d/rc.local
+    redis进程自启：
 ```

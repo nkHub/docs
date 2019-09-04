@@ -1,4 +1,25 @@
+<!--
+ * @Description: 
+ * @version: 1.0.0
+ * @Author: nk
+ * @Date: 2019-08-08 20:40:18
+ * @LastEditTime: 2019-09-05 00:40:43
+ -->
 # [Mongoose](http://mongoosejs.net/docs/api.html)
+
+#### 备注
+```
+    初始化mongodb服务
+    ./mongod -f /root/mongodb-linux-x86_64-4.0.6/data/etc/mongodb.conf
+    显示进程列表
+    netstat -tunlp
+    关闭进程
+    kill -9 PID
+    如果强制关闭进程，mongodb需要删除data/bin文件夹下mongodb.lock文件，并且在bin文件夹下执行
+    ./mongod --repair
+    之后重新初始化数据库服务
+    
+```
 
 #### 1. 连接与配置(mongodb.js)
 

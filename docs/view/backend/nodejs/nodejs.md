@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-08 18:11:06
- * @LastEditTime: 2019-09-05 13:30:18
+ * @LastEditTime: 2019-09-05 13:32:50
  -->
 # [服务器搭建](http://nodejs.cn/api/)
 
@@ -32,5 +32,5 @@
 ```
     node进程自启： pm2自启
     mongodb进程自启： /etc/rc.d/rc.local 填入启动命令、执行chmod +x /etc/rc.d/rc.local
-    redis进程自启：同mongodb
+    redis进程自启：同mongodb做法
 ```

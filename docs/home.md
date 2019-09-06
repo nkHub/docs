@@ -1,8 +1,15 @@
+<!--
+ * @Description: 
+ * @version: 1.0.0
+ * @Author: nk
+ * @Date: 2019-08-09 14:26:02
+ * @LastEditTime: 2019-09-06 13:29:46
+ -->
 # 首页
 
 !>  **该文档仅作为个人备忘记录** 。
 
-?> 更新：2019-08-08 [nodejs补充](/view/backend/nodejs/nodejs)
+?> 更新：2019-09-06 [Flutter 真机调试]](/view/app/flutter/run.md)
 
 <!-- * flag:
   - Flutter app实例构建

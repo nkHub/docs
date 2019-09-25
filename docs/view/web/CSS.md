@@ -1,69 +1,136 @@
+<!--
+ * @version: 1.0.0
+ * @Date: 2019-08-08 20:07:18
+ * @LastEditTime: 2019-09-25 23:12:32
+ -->
 # [CSS](https://www.css88.com/book/css/)
 
 页面中由于元素的大小、宽高、布局隐藏等发生变化会引起页面的回流和重绘；
 元素的外观风格如颜色等发生变化将引起重绘。减少或避免发生回流，尽量单次修改（css或js），减少DOM访问，脱离文档流;
 
-##### 1. 图片调整属性：
+##### 1. 常用css：
+
+样式重置[reset.css](https://meyerweb.com/eric/tools/css/reset/)
 
 ```
-  object-fit: cover | contain | fill | none | scale-down;
-  object-position: center | percentage | px;
-```
-
-##### 2. 屏蔽鼠标事件：
-
-```
-  pointer-events：none;
-```
-
-##### 3. placeholder样式：
-
-```
-  input::-webkit-input-placeholder,
-  textarea::-webkit-input-placeholder {
-　　color: red;
+  // 样式重置
+  input{
+      -webkit-tap-highlight-color: transparent; // 清除iOS长按灰色蒙版
   }
-```
 
-##### 4. 多行文本省略：
+  // input::-webkit-input-placeholder,
+  // textarea::-webkit-input-placeholder {
+　//　  color: #000;
+  // }
 
-```
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; //行数
-  overflow: hidden;
-```
-
-##### 5. iOS滑动优化(内部定位失效)：
-
-```
-  -webkit-overflow-scrolling : touch;
-```
-
-##### 6. 清除iOS长按灰色蒙版：
-
-```
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-```
-
-##### 7. 滚动条样式自定义：
-
-```
-  //清除滚动条
-  selector::-webkit-scroll-bar{
-    display: none;
-    color: transparent;
+  //flex布局
+  .flex-spb{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
+  .flex-center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  // 图片样式
+  .image-cover{
+      object-fit: cover; // cover | contain | fill | none | scale-down
+      object-position: center;  // center | percentage | px;
+  }
+  .image-contain{
+      object-fit: contain;
+      object-position: center;
+  }
+
+  //无法选中与复制
+  .no-select{
+      user-select: none;
+  }
+
+  // 屏蔽事件
+  .no-event{
+      pointer-events：none;
+  }
+
+  // 清除滚动条
+  .no-scrollbar::-webkit-scroll-bar{
+      display: none;
+      color: transparent;
+  }
+
+  //文本溢出
+  .text-ellipsis{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+  }
+
+  .text-ellipsis-2{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; //行数
+      overflow: hidden;
+  }
+
+  // iOS滑动优化(内部定位失效)
+  .scrolling{
+      -webkit-overflow-scrolling : touch;
+  }
+  
+  
 ```
 
-##### 8. flex宽度失效：
+##### 2. css Hack：
+
+hack       | IE6| IE7| IE8| IE9| IE10| 现代
+---        |:--:|:--:|:--:|:--:|:--:|:--:
+\*         | √  | √  |    |    |     |
+\+         |    | √  |    |    |     |
+\-         | √  |    |    |    |     |
+!important |    | √  | √  | √  | √   | √
+\\9        | √  | √  | √  | √  | √   | 
+\\0        |    |    | √  | √  | √   | 
+\\9\\0     |    |    |    | √  | √   | 
+
+
+##### 3.条件注释
 
 ```
-  子栏目添加flex:0 0 auto;属性
+  lte：就是Less than or equal to的简写，也就是小于或等于的意思。
+  lt ：就是Less than的简写，也就是小于的意思。
+  gte：就是Greater than or equal to的简写，也就是大于或等于的意思。
+  gt ：就是Greater than的简写，也就是大于的意思。
+  ! ：就是不等于的意思，跟javascript里的不等于判断符相同。
+  具体用法：<!--[if+logical dialog+browser version]><![endif]-->
+  条件注释只能用于IE5以上。
 ```
 
-##### 9. css Hack：
+##### 4.其他概念
 
-```
-  空
-```
+    1、CSS继承：子元素只会继承父元素的非结构型样式。
+    2、CSS层叠性：比较权重 + 就近原则。
+    3、标准文档流：
+        a) 文档加载时，自上而下，从左到右。
+        b) 空白折叠、高矮不齐，底边对齐、自动换行
+    4、块级元素：占用一整行，可调宽高，默认父元素宽度。行内元素：紧挨其他元素，不可调整，默认内容宽度
+    5、元素浮动后特性：
+        a)脱离标准文档流
+        b)双浮动元素紧贴，宽度不足总宽则自动下排
+        c)文本将围绕浮动元素
+        d)未设置宽高，默认由内部元素决定
+    6、margin在标准文档流（即非浮动、定位元素）中，会存在margin塌陷的问题即上下元素的margin会以较大者优先。
+    7、选项卡图标的引入<link rel=”shortcut icon” href=” ”>
+    8、浏览器前缀
+        a)谷歌、Safari		webkit	  -webkit-
+        b)火狐			    gecko	   -moz-
+        c)IE				 trident	 -ms-
+        d)Opera			  presto	  -o-	(新版为webkit内核)
+    9、图片自适应优化因屏幕大小改变图片源（使用picture标签+source标签→media属性辅助）
+    10、媒体查询三种方式
+        a)<link href=”CSS文件” media=”media-quary-list”>
+        b)@import url(CSS文件) mediaType
+        c)CSS中 @media：(media-quary-list){ CSS属性}
+    11、当多个同级元素设置为display: inline-block;时相邻之间会有3px的间距

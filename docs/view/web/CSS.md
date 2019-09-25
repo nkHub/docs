@@ -34,13 +34,13 @@
   overflow: hidden;
 ```
 
-##### 5. IOS滑动优化(内部定位失效)：
+##### 5. iOS滑动优化(内部定位失效)：
 
 ```
   -webkit-overflow-scrolling : touch;
 ```
 
-##### 6. 清除IOS长按灰色蒙版：
+##### 6. 清除iOS长按灰色蒙版：
 
 ```
   -webkit-tap-highlight-color: rgba(0,0,0,0);

@@ -10,7 +10,7 @@ npm @next最新包
   // Process JS with Babel.
   {
     test: /\.(js|jsx|mjs)$/,
-    include: paths.appSrc,
+    include: paths.AppSrc,
     loader: require.resolve('babel-loader'),
     options: {
       cacheDirectory: true,

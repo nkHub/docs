@@ -46,7 +46,7 @@
     - node_modules
     - src
         - assets
-        app.vue
+        App.vue
         main.js
     .babelrc            //bable配置文件
     .package.json       //npm配置文件
@@ -67,7 +67,7 @@
         mode: process.env.NODE_ENV,
         // 入口
         entry: {
-            app: './src/main.js'
+            App: './src/main.js'
         },
         // 出口
         output: {

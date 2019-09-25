@@ -1,9 +1,10 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-06-21 11:05:37
- * @LastEditTime: 2019-09-17 19:57:48
+ * @LastEditTime: 2019-09-25 20:16:40
  -->
-* [web](view/web/web.md)
+* [浏览器](view/web/browser/browser.md)
+* [HTML](view/web/HTML.md)
 * [CSS](view/web/CSS.md)
 * [JavaScript](view/web/javascript/JavaScript.md)
 * [jquery](view/web/jquery.md)

@@ -48,7 +48,7 @@
 
     //外部配置
     new Vue({
-        el: '#app',
+        el: '#App',
         router,
         store,
         components: { App },

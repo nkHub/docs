@@ -3,16 +3,16 @@
 ##### [express脚手架](http://www.expressjs.com.cn/starter/generator.html);
 
 ```
-    项目名称: appname
-    express --view=pug appname //初始化
-    DEBUG=appname:* npm start  //本地运行
+    项目名称: Appname
+    express --view=pug Appname //初始化
+    DEBUG=Appname:* npm start  //本地运行
 ```
 
-##### 1. 通用配置(app.js)
+##### 1. 通用配置(App.js)
 
 ```
     const compression = require('compression');
-    const app = express();
+    const App = express();
 
     // express配置
     const options = {
@@ -27,24 +27,24 @@
         }
     }
     //初始化外部访问路径(public)与配置
-    app.use(express.static(path.join(__dirname, 'public'), options));
+    App.use(express.static(path.join(__dirname, 'public'), options));
 
     //上传文件大小限制
-    app.use(express.json({ limit: '50mb' }));
-    app.use(express.urlencoded({ 
+    App.use(express.json({ limit: '50mb' }));
+    App.use(express.urlencoded({ 
         limit: '50mb', 
         extended: true, 
         parameterLimit: 50000 
     }));
     
     //开启Gzip
-    app.use(compression());
+    App.use(compression());
 ```
 
 ##### 2. https配置(bin/www)
 
 ```
-    var app = require('../app');
+    var App = require('../App');
     /**
     * https设置
     */
@@ -52,7 +52,7 @@
         key : fs.readFileSync("/bin/******.key"),
         cert: fs.readFileSync("/bin/******.pem")
     }
-    const server = http.createServer(app).listen(443);
+    const server = http.createServer(App).listen(443);
 ```
 
 ##### 3. 文件上传(upload.js)

@@ -3,8 +3,8 @@
 ##### 1. npm项目创建：
 
 ```
-  npm install –g create-react-app
-  create-react-app 项目名称
+  npm install –g create-react-App
+  create-react-App 项目名称
   cd 项目名称
   npm start
   npm run dev   //开发本地测试

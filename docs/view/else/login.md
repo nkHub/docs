@@ -5,24 +5,24 @@ QQ申请不下来，，暂时没有。微信和微博可用
 #### 1. 前端
 
 ```
-    const appid = ######;
+    const Appid = ######;
     const client_id = ######;
     let redirect = '';
 
-    //微信两个appid不同
+    //微信两个Appid不同
     //微信移动端
-    redirect = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='
-    + appid + '&redirect_uri=' + redirect
+    redirect = 'https://open.weixin.qq.com/connect/oauth2/authorize?Appid='
+    + Appid + '&redirect_uri=' + redirect
     +'&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
 
      //微信pc端
-    redirect = 'https://open.weixin.qq.com/connect/qrconnect?appid='
-    + appid + '&redirect_uri=' + redirect
+    redirect = 'https://open.weixin.qq.com/connect/qrconnect?Appid='
+    + Appid + '&redirect_uri=' + redirect
     +'&response_type=code&scope=snsapi_login&state=1#wechat_redirect';
 
      //QQ
-    redirect = 'https://open.weixin.qq.com/connect/oauth2/authorize?appid='
-    + appid + '&redirect_uri=' + redirect
+    redirect = 'https://open.weixin.qq.com/connect/oauth2/authorize?Appid='
+    + Appid + '&redirect_uri=' + redirect
     +'&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect';
 
     //微博
@@ -44,15 +44,15 @@ if(isset($_POST['type'])){
         case 'weixin':
             //获取openid
             if($_POST['isWeChat'] == 'false'){ //pc端扫码登录
-                $appId = '**************';
+                $AppId = '**************';
                 $WXscrect = '********************';
             }else{
-                $appId = '**************';
+                $AppId = '**************';
                 $WXscrect = '********************';
             }
 
-            $accessTokenUrl = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='
-            .$appId.'&secret='.$WXscrect.'&code='.$_POST['code'].
+            $accessTokenUrl = 'https://api.weixin.qq.com/sns/oauth2/access_token?Appid='
+            .$AppId.'&secret='.$WXscrect.'&code='.$_POST['code'].
             '&grant_type=authorization_code';
             //请求返回值
             $tokenReturn = file_get_contents($accessTokenUrl);

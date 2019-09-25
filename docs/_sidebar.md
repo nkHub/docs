@@ -1,6 +1,11 @@
-* [web](view/web/web.md)
+<!--
+ * @version: 1.0.0
+ * @Date: 2019-08-08 19:43:58
+ * @LastEditTime: 2019-08-08 19:43:58
+ -->
+* [网页](view/web/web.md)
 * [小程序](view/mini/wxmini.md)
-* [app](view/app/app.md)
+* [App](view/App/App.md)
 * [后端](view/backend/backend.md)
 * [数据库](view/database/database.md)
 * [其他](view/else/else.md)

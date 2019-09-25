@@ -2,16 +2,16 @@
 
 ##### 1.创建活动
 
-清单文件manifest.xml的application节点下添加activity节点，创建layout界面
+清单文件manifest.xml的Application节点下添加activity节点，创建layout界面
 
 ```
   //清单文件manifest.xml
   <activity
-    android:name=".module.second.second"
-    android:label="活动"> //toolbar页面标题
+    Android:name=".module.second.second"
+    Android:label="活动"> //toolbar页面标题
     <intent-filter> //意图过滤
-      <action android:name="com.test.activitytest.ACTION_START" /> //action
-      <category android:name="android.intent.category.DEFAULT" />
+      <action Android:name="com.test.activitytest.ACTION_START" /> //action
+      <category Android:name="Android.intent.category.DEFAULT" />
     </intent-filter>
   </activity>
   ...

@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-09-04 18:02:02
- * @LastEditTime: 2019-09-04 20:59:01
+ * @LastEditTime: 2019-09-25 20:03:04
  -->
 # 环境搭建
 
@@ -20,9 +20,9 @@
     export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin/
 
     export PATH='flutter路径'/flutter/bin:$PATH
-    export ANDROID_HOME="安卓sdk路径"  
-    export PATH=${PATH}:${ANDROID_HOME}/tools
-    export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+    export Android_HOME="安卓sdk路径"  
+    export PATH=${PATH}:${Android_HOME}/tools
+    export PATH=${PATH}:${Android_HOME}/platform-tools
     export PUB_HOSTED_URL=https://pub.flutter-io.cn
     export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 ```
@@ -52,10 +52,10 @@
 ##### Android Stuido
 
 首选项 => 插件 搜索Flutter与Dart
-![flutter-android-plugins](https://nikai.site/docs/flutter-android-plugins.jpg)
+![flutter-Android-plugins](https://nikai.site/docs/flutter-android-plugins.jpg)
 
 首选项 => 语言与框架 => Flutter或Dart设置sdk路径 
-![flutter-android-set](https://nikai.site/docs/flutter-android-set.jpg)
+![flutter-Android-set](https://nikai.site/docs/flutter-android-set.jpg)
 
 -----
 

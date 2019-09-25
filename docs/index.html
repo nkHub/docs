@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-09 14:51:52
- * @LastEditTime: 2019-09-04 19:59:26
+ * @LastEditTime: 2019-09-25 20:33:49
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div data-app id="main" v-cloak>加载中...</div>
+    <div data-App id="main" v-cloak>加载中...</div>
     <script>
         window.$docsify = {
             el: '#main',
@@ -70,10 +70,9 @@
     <script src="//unpkg.com/prismjs/components/prism-jsx.min.js"></script>
 
     <script>
-        // 经常更新不变，所以去除serviceWorker本地缓存
-        // if (typeof navigator.serviceWorker !== 'undefined') {
-        //   navigator.serviceWorker.register('sw.js')
-        // }
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw.js')
+        }
     </script>
 </body>
 

@@ -1,7 +1,7 @@
 # Android
 
 * 基础文档
-    - [android 文档](http://www.android-doc.com/reference/packages.html)
+    - [Android 文档](http://www.Android-doc.com/reference/packages.html)
 
 * 工具文档
     - [Retrofit](https://inthecheesefactory.com/blog/retrofit-2.0/en)

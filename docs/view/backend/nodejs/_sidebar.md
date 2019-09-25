@@ -1,6 +1,6 @@
-* nodejs
-    * [服务器搭建](view/backend/nodejs/nodejs.md)
-    * [Express](view/backend/nodejs/express.md)
-    * [Mongoose](view/backend/nodejs/mongoose.md)
-    * [Redis](view/backend/nodejs/redis.md)
+* nodeJs
+    * [服务器搭建](view/backend/nodeJs/nodeJs.md)
+    * [Express](view/backend/nodeJs/express.md)
+    * [Mongoose](view/backend/nodeJs/mongoose.md)
+    * [Redis](view/backend/nodeJs/redis.md)
 * [配置](view/config/config.md)

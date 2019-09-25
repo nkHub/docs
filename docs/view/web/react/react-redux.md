@@ -57,22 +57,22 @@
 
 ###### 1). store：
 
-store由createStore创建，可使用combineReducers() 合并多个reducer，applyMiddleware(thunk, promise, logger)中间件拓展 如异步、日志等。
+store由createStore创建，可使用combineReducers() 合并多个reducer，ApplyMiddleware(thunk, promise, logger)中间件拓展 如异步、日志等。
 
 React-thunk 使dispatch可接受函数（原来只接受对象）,可拓展多步操作（可包含多个dispatch）;
 
 i. 状态存储中心，store.js代码：
 
 ```
-  //通用const store = applyMiddleware(...middlewares)(createStore)(reducer, initialState);
+  //通用const store = ApplyMiddleware(...middlewares)(createStore)(reducer, initialState);
 
   //实例
   'use strict';
-  import { createStore, applyMiddleware } from 'redux';
+  import { createStore, ApplyMiddleware } from 'redux';
   import thunkMiddleware from 'redux-thunk';
   import rootReducer from './reducer';
   //此处设置中间件thunk的方法
-  const createStoreWithMiddleware = applyMiddleware(thunkMiddleware)(createStore);
+  const createStoreWithMiddleware = ApplyMiddleware(thunkMiddleware)(createStore);
   const configureStore = (initialState) => {
     return createStoreWithMiddleware(rootReducer, initialState);
   };

@@ -13,7 +13,7 @@
     const signPackage = {}; //接口返回参数
     wx.config({
         debug: false,
-        appId: signPackage.appId,
+        AppId: signPackage.AppId,
         timestamp: parseInt(signPackage.timestamp),
         nonceStr: signPackage.nonceStr,
         signature: signPackage.signature,
@@ -32,7 +32,7 @@
         wx.onMenuShareWeibo(shareData);
         wx.onMenuShareQZone(shareData);
 
-        //ios视频自动播放需要在该回调内调用video.play();
+        //iOS视频自动播放需要在该回调内调用video.play();
     });
     wx.error(function(res){
        alert(res.errMsg);

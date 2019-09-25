@@ -74,7 +74,7 @@
     import router from './router'
     import store from './store'
     new Vue({
-        el: '#app',
+        el: '#App',
         router,
         store,
         components: { App },

@@ -1,3 +1,8 @@
+<!--
+ * @version: 1.0.0
+ * @Date: 2019-06-21 11:05:37
+ * @LastEditTime: 2019-06-21 11:05:37
+ -->
 * [网页](view/web/web.md)
   * [HTML5](view/web/HTML5.md)
   * [CSS](view/web/CSS.md)
@@ -6,7 +11,7 @@
   * [react](view/web/react/react.md)
   * [npm相关](view/web/npm/npm.md)
 * [小程序](view/mini/wxmini.md)
-* [App](view/app/app.md)
+* [App](view/App/App.md)
   * [HTML5+](view/App/HTML5+.md)
   * [React-Native](view/App/React-Native.md)
   * [Android](view/App/Android/Android.md)

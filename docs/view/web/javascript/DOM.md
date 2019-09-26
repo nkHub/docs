@@ -1,7 +1,7 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-09-26 10:59:36
- * @LastEditTime: 2019-09-26 11:32:38
+ * @LastEditTime: 2019-09-26 11:34:19
  -->
 # DOM相关
 
@@ -35,6 +35,4 @@
         c)textContent 获取内容加空格
         d)outerHTML 内容、内部标签和本身标签
     9、获取css样式 window.getComputedStyle(obj,伪类)
-
-    
     

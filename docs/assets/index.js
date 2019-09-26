@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 15:44:18
+ * @LastEditTime: 2019-09-26 15:49:14
  */
 
 'use strict';
@@ -9,7 +9,7 @@
 if (typeof navigator.serviceWorker !== 'undefined') {
     navigator.serviceWorker.register('sw.js')
 }
-
+// 配置
 window.$docsify = {
     el: '#main',
     homepage: 'home.md',

@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-06-24 19:09:24
- * @LastEditTime: 2019-09-27 00:07:35
+ * @LastEditTime: 2019-09-27 00:20:24
  -->
 # mongodb
 
@@ -21,7 +21,7 @@
 
 创建集合: db.createCollection(集合名称,参数)
 
-![create_options](http://nikai.site/docs/monogoDB_create_options.png)
+![create_options](https://nikai.site/docs/monogoDB_create_options.png)
 
 显示数据库所有集合: show collections
 

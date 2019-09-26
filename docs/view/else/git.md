@@ -1,11 +1,11 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-06-21 11:05:37
- * @LastEditTime: 2019-06-21 11:05:37
+ * @LastEditTime: 2019-09-27 00:19:36
  -->
 # git常用命令
 
-![git](http://nikai.site/docs/git.jpg)
+![git](https://nikai.site/docs/git.jpg)
 
 ###### 其他
 

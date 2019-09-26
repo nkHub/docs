@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 15:49:14
+ * @LastEditTime: 2019-09-26 16:36:54
  */
 
 'use strict';
@@ -11,6 +11,7 @@ if (typeof navigator.serviceWorker !== 'undefined') {
 }
 // 配置
 window.$docsify = {
+    formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
     el: '#main',
     homepage: 'home.md',
     name: '个人文档',
@@ -20,6 +21,7 @@ window.$docsify = {
     coverpage: true,
     onlyCover: true,
     loadSidebar: true,
+    mergeNavbar: true,
     maxLevel: 3,
     auto2top: true,
     search: 'auto',

@@ -3,13 +3,13 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-09 14:26:02
- * @LastEditTime: 2019-09-25 20:34:10
+ * @LastEditTime: 2019-09-26 16:35:37
  -->
 # 首页
 
 !>  **该文档仅作为个人备忘记录** 。
 
-?> 更新：2019-09-25 结构调整
+?> 更新：{docsify-updated} 结构调整
 
 <!-- * flag:
   - Flutter App实例构建

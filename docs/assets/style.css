@@ -9,10 +9,6 @@ section.content {
     min-height: 100vh;
 }
 
-.fcr {
-    color: red;
-}
-
 [v-cloak] {
     display: none;
 }

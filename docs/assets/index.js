@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 19:32:52
+ * @LastEditTime: 2019-09-26 20:01:14
  */
 
 'use strict';
@@ -10,6 +10,11 @@ if (typeof navigator.serviceWorker !== 'undefined') {
     navigator.serviceWorker.register('sw.js')
 }
 // 配置
+window.onload = function() {
+    mermaid.initialize({ startOnLoad: false });
+}
+
+
 window.$docsify = {
     formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
     el: '#main',
@@ -33,6 +38,19 @@ window.$docsify = {
         placeholder: '搜索',
         noData: '找不到结果!',
         depth: 6
+    },
+    markdown: {
+        smartypants: true,
+        renderer: {
+            code: function(code, lang) {
+                if (lang === "mermaid") {
+                    return (
+                        '<div class="mermaid">' + mermaid.render(lang, code) + "</div>"
+                    );
+                }
+                return this.origin.code.apply(this, arguments);
+            }
+        }
     },
     copyCode: {
         buttonText: '复制到粘贴板',

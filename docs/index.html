@@ -1,7 +1,7 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-08-09 14:51:52
- * @LastEditTime: 2019-09-26 20:52:26
+ * @LastEditTime: 2019-09-27 00:11:41
  -->
 <!DOCTYPE html>
 <html lang="cn">
@@ -20,7 +20,14 @@
 </head>
 
 <body>
-    <div data-App id="main" v-cloak>😁加载中...</div>
+    <div data-App id="main">
+        <div class="loading default">
+            <div class="loading-content">
+                <img src="https://nikai.site/docs/loading.gif" />
+                <p>拼命加载中... </p>
+            </div>
+        </div>
+    </div>
     <script src="assets/index.js"></script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>

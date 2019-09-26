@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-06-24 19:09:24
- * @LastEditTime: 2019-09-05 00:39:03
+ * @LastEditTime: 2019-09-27 00:07:35
  -->
 # mongodb
 
@@ -44,10 +44,6 @@
     - db.集合名称.updateMany(同上)
     - db.集合名称.save(更新的数据)
 
-    返回的错误
-
-![error_return](http://nikai.site/docs/monogoDB_modify_error.png)
-
 集合中查找数据:
     - db.集合名称.find(条件,显示与否部分数据)
     - db.集合名称.find().pretty()显示所有数据
@@ -56,8 +52,6 @@
     - db.集合名称.find().sort({key：-1/1})排序(1升)
     - db.集合名称.find().ensureIndex({key：-1/1},参数)索引(1升)设置唯一、权重和语言等。
     - db.集合名称.aggregate()处理数据(统计平均值、求和等)
-
-![data_detail](http://nikai.site/docs/monogoDB_data_detail.png)
 
 连写优先级：sort>skip>limit
 

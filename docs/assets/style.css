@@ -9,10 +9,6 @@ section.content {
     min-height: 100vh;
 }
 
-[v-cloak] {
-    display: none;
-}
-
 input:focus,
 button:focus {
     outline: none;
@@ -88,6 +84,10 @@ button:focus {
     justify-content: center;
     align-items: center;
     min-height: 70vh;
+}
+
+.loading.default {
+    min-height: 100vh;
 }
 
 .loading-content {

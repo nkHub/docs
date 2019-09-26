@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 16:49:21
+ * @LastEditTime: 2019-09-26 17:36:05
  */
 
 'use strict';
@@ -21,7 +21,6 @@ window.$docsify = {
     coverpage: true,
     onlyCover: true,
     loadSidebar: true,
-    mergeNavbar: true,
     maxLevel: 3,
     auto2top: true,
     notFoundPage: true,

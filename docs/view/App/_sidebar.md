@@ -7,5 +7,5 @@
  -->
 * [React-Native](view/App/React-Native/React-Native.md)
 * [Android](view/App/Android/Android.md)
-* [Flutter](view/App/flutter/flutter.md)
+* [Flutter](view/App/Flutter/Flutter.md)
 * [配置](view/config/config.md)

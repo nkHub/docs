@@ -1,10 +1,9 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-08-09 14:30:27
- * @LastEditTime: 2019-08-09 14:30:27
+ * @LastEditTime: 2019-09-26 16:11:10
  -->
-![logo](https://nikai.site/docs/pic.jpg ':size=80')
 
-<!-- # [docsify](/) -->
+![logo](https://nikai.site/docs/pic.jpg ':size=100')
 
-* [个人文档](/home.md)
+* [开始阅读](README.md)

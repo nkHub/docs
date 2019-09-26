@@ -1,7 +1,7 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-08-08 20:07:18
- * @LastEditTime: 2019-09-25 23:12:32
+ * @LastEditTime: 2019-09-26 10:56:34
  -->
 # [CSS](https://www.css88.com/book/css/)
 
@@ -134,3 +134,18 @@ hack       | IE6| IE7| IE8| IE9| IE10| 现代
         b)@import url(CSS文件) mediaType
         c)CSS中 @media：(media-quary-list){ CSS属性}
     11、当多个同级元素设置为display: inline-block;时相邻之间会有3px的间距
+    12、网页界面的样式因浏览器版本而不同，推荐优雅降级
+    13、bootstrap断点
+        a)超小屏幕 小于768px 手机
+        b)小屏幕 768px ~ 992px 平板
+        c)中屏幕 992px ~ 1200px
+        d)大屏幕 大于1200px
+    14、IE6 部分兼容
+        a)不支持小于12px的盒子，解决方法如下：
+            i.将字体大小设置小于盒子大小
+            ii.添加专用属性（hack） 例如： _background
+            iii.触发haslayout机制使用_zoom:1
+        b)双倍margin bug：多元素浮动，携带同方向的margin，会存在队首元素双倍margin的现象，解决方法：
+            1）是两者方向相反
+            2）给队首元素添加专有属性hack，一半的margin。例如：_margin-left: 50px;
+            3）IE中出现浮动后与浏览器之间有3px的间隙。

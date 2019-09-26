@@ -13,6 +13,16 @@ section.content {
     display: none;
 }
 
+input:focus,
+button:focus {
+    outline: none;
+}
+
+:root {
+    --docsifytabs-border-color: #ededed;
+    --docsifytabs-tab-highlight-color: purple;
+}
+
 
 /* vuep样式修改 */
 

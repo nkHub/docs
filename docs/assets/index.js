@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 20:01:14
+ * @LastEditTime: 2019-09-26 20:53:00
  */
 
 'use strict';
@@ -38,6 +38,13 @@ window.$docsify = {
         placeholder: '搜索',
         noData: '找不到结果!',
         depth: 6
+    },
+    tabs: {
+        persist: true,
+        sync: true,
+        theme: 'classic',
+        tabComments: true,
+        tabHeadings: true
     },
     markdown: {
         smartypants: true,

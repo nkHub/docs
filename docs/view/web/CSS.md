@@ -1,7 +1,7 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-08-08 20:07:18
- * @LastEditTime: 2019-09-26 10:56:34
+ * @LastEditTime: 2019-09-26 20:29:24
  -->
 # [CSS](https://www.css88.com/book/css/)
 
@@ -14,7 +14,7 @@
 
 ```
   // 样式重置
-  input{
+  input,button{
       -webkit-tap-highlight-color: transparent; // 清除iOS长按灰色蒙版
   }
 

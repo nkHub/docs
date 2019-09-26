@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-09 14:26:02
- * @LastEditTime: 2019-09-26 18:29:19
+ * @LastEditTime: 2019-09-26 19:33:12
  -->
 # 首页
 
@@ -12,7 +12,7 @@
 [![github](https://badgen.net/github/last-commit/nkHub/docs?icon=github&color=4ab8a1)](https://github.com/nkHub/docs)
 ![stars](https://badgen.net/github/stars/nkHub/docs?icon=github&color=4ab8a1) 
 
-?> 更新： 结构调整
+?> 更新： {docsify-updated} 结构调整
 
 * 常用
     - [css手册](http://css.doyoe.com/)

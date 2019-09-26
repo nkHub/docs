@@ -1,7 +1,7 @@
 <!--
  * @version: 1.0.0
  * @Date: 2019-06-21 17:07:09
- * @LastEditTime: 2019-09-26 20:51:25
+ * @LastEditTime: 2019-09-27 00:25:50
  -->
 # [配置文档](https://docsify.js.org/#/zh-cn/quickstart)
 
@@ -58,15 +58,6 @@
 #### ** demo3 **
 内容3
 <!-- tabs:end -->
-
-[mermaid实例](https://www.cnblogs.com/nanqiang/p/8244309.html)
-
-```mermaid
-graph LR;
-　　Portal-->|发布/更新配置|Apollo配置中心;
-　　Apollo配置中心-->|实时推送|App;
-　　App-->|实时查询|Apollo配置中心;
-```
 
 <!-- <script>
   new Vue({

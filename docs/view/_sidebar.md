@@ -6,7 +6,7 @@
   * [react](view/web/react/react.md)
   * [npm相关](view/web/npm/npm.md)
 * [小程序](view/mini/wxmini.md)
-* [App](view/App/App.md)
+* [App](view/app/app.md)
   * [HTML5+](view/App/HTML5+.md)
   * [React-Native](view/App/React-Native.md)
   * [Android](view/App/Android/Android.md)

@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 16:36:54
+ * @LastEditTime: 2019-09-26 16:49:21
  */
 
 'use strict';
@@ -24,6 +24,8 @@ window.$docsify = {
     mergeNavbar: true,
     maxLevel: 3,
     auto2top: true,
+    notFoundPage: true,
+    notFoundPage: '404.md',
     search: 'auto',
     search: {
         maxAge: 86400000,

@@ -65,3 +65,14 @@ section.content {
 .cover.show+.sidebar-toggle {
     display: none;
 }
+
+
+/* 404 */
+
+.loading {
+    text-align: center;
+}
+
+.loading img {
+    width: 240px;
+}

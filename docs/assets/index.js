@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 17:36:05
+ * @LastEditTime: 2019-09-26 17:58:10
  */
 
 'use strict';
@@ -13,13 +13,14 @@ if (typeof navigator.serviceWorker !== 'undefined') {
 window.$docsify = {
     formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
     el: '#main',
-    homepage: 'home.md',
+    homepage: '/home.md',
     name: '个人文档',
     nameLink: '#/home',
     repo: 'https://github.com/nkHub',
     loadNavbar: true,
     coverpage: true,
     onlyCover: true,
+    coverpage: 'cover.md',
     loadSidebar: true,
     maxLevel: 3,
     auto2top: true,

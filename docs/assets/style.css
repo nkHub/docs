@@ -74,9 +74,20 @@ section.content {
 /* 404 */
 
 .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.loading-content {
     text-align: center;
 }
 
 .loading img {
     width: 240px;
+}
+
+.loading p {
+    margin: 0;
 }

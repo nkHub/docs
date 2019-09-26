@@ -54,6 +54,10 @@ section.content {
 
 /* pagination样式 */
 
+.docsify-pagination-container:empty {
+    display: none;
+}
+
 .pagination-item-title {
     margin-top: 4px;
     font-size: 1.2em!important;

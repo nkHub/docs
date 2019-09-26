@@ -3,19 +3,16 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-09 14:26:02
- * @LastEditTime: 2019-09-26 16:35:37
+ * @LastEditTime: 2019-09-26 18:29:19
  -->
 # 首页
 
 !>  **该文档仅作为个人备忘记录** 。
 
-?> 更新：{docsify-updated} 结构调整
+[![github](https://badgen.net/github/last-commit/nkHub/docs?icon=github&color=4ab8a1)](https://github.com/nkHub/docs)
+![stars](https://badgen.net/github/stars/nkHub/docs?icon=github&color=4ab8a1) 
 
-<!-- * flag:
-  - Flutter App实例构建
-  - nodeJs + MongoDB后台搭建
-  - 前端可视化3d方向(D3.js、three.js)
-  - Electron PC工具搭建 -->
+?> 更新： 结构调整
 
 * 常用
     - [css手册](http://css.doyoe.com/)
@@ -43,23 +40,3 @@
     - [nodeJs后台(暂时啥都没有)](http://nikai.site/)
     - 三方授权分享测试(更换服务器暂时失效)
     - [安卓测试demo](https://github.com/nkHub/AndroidTest) -->
-
-<!-- !>  **vue测试** 
-
-<vuep template="#example"></vuep>
-
-<script v-pre type="text/x-template" id="example">
-<template>
-  <div>{{msg}}</div>
-</template>
-
-<script>
-  module.exports = {
-    data() {
-      return {
-        msg: 'Vue'
-      }
-    }
-  }
-</script>
-</script> -->

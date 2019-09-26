@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-26 17:58:10
+ * @LastEditTime: 2019-09-26 18:28:40
  */
 
 'use strict';
@@ -11,7 +11,6 @@ if (typeof navigator.serviceWorker !== 'undefined') {
 }
 // 配置
 window.$docsify = {
-    formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
     el: '#main',
     homepage: '/home.md',
     name: '个人文档',

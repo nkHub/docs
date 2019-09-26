@@ -1,6 +1,30 @@
+<!--
+ * @version: 1.0.0
+ * @Date: 2019-06-21 17:07:09
+ * @LastEditTime: 2019-09-26 18:32:26
+ -->
 # [配置文档](https://docsify.js.org/#/zh-cn/quickstart)
 
-!>  **{{msg}}** 。
+<!-- !>  **{{msg}}** 。 -->
+<vuep template="#example"></vuep>
+
+  <script v-pre type="text/x-template" id="example">
+  <template>
+    <div>{{msg}}</div>
+  </template>
+
+  <script>
+    module.exports = {
+      data() {
+        return {
+          msg: '使用命令docsify serve docs初始化该文档'
+        }
+      }
+    }
+  </script>
+</script>
+
+#### markdown部分测试
 
 ?> 普通提示
 
@@ -27,9 +51,9 @@
   - [ ] lim
 
 
-<script>
+<!-- <script>
   new Vue({
     el: '#main',
     data: { msg: '使用命令docsify serve docs初始化该文档' }
   })
-</script>
+</script> -->

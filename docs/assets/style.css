@@ -5,8 +5,8 @@
 * @Last Modified time: 2018-12-17 13:55:54
 */
 
-* {
-    /* user-select: none; */
+section.content {
+    min-height: 100vh;
 }
 
 .fcr {

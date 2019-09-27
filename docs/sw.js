@@ -20,7 +20,8 @@ const HOSTNAME_WHITELIST = [
     self.location.hostname,
     'fonts.gstatic.com',
     'fonts.googleapis.com',
-    'unpkg.com'
+    'unpkg.com',
+    'api.github.com'
 ]
 
 const getFixedUrl = (req) => {

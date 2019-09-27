@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-27 00:26:09
+ * @LastEditTime: 2019-09-27 15:35:50
  */
 
 'use strict';
@@ -11,7 +11,6 @@ if (typeof navigator.serviceWorker !== 'undefined') {
 }
 // 配置
 window.$docsify = {
-    formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
     el: '#main',
     homepage: '/home.md',
     name: '个人文档',
@@ -64,4 +63,34 @@ window.$docsify = {
         nextText: '下一章节',
         crossChapter: true
     }
+}
+
+// 自动获取最新提交信息
+window.onload = function() {
+    let commitMsg = document.querySelector('#commitMsg');
+    fetch('https://api.github.com/repos/nkHub/docs/branches/master').then(res => res.json()).then(res => {
+        let msg = res.commit.commit.message;
+        let date = formateDate(new Date(res.commit.commit.committer.date).getTime());
+        commitMsg.innerHTML = date + '  ' + msg;
+    }).catch(e => {});
+}
+
+// 时间格式化
+function formateDate(timestamp = Date.now(), formate = 'y-M-d h:m:s') {
+    let date = new Date(timestamp);
+    if (date == "Invalid Date") throw '时间戳错误';
+    let o = {
+        "y+": date.getFullYear(), //年
+        "M+": date.getMonth() + 1, //月
+        "d+": date.getDate(), //日
+        "h+": date.getHours(), //小时
+        "m+": date.getMinutes(), //分
+        "s+": date.getSeconds(), //秒
+    };
+    for (let key in o) {
+        if (new RegExp("(" + key + ")").test(formate)) {
+            formate = formate.replace(RegExp.$1, (key == 'y+') ? (o[key]) : (("00" + o[key]).substr(("" + o[key]).length)));
+        }
+    }
+    return formate;
 }

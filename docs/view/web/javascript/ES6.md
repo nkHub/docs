@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-08 20:24:14
- * @LastEditTime: 2019-08-15 19:15:20
+ * @LastEditTime: 2019-09-27 14:10:57
  -->
 # ES6
 
@@ -165,4 +165,3 @@ generator类似于async, await换位yield，返回Promise对象。
   相对于require的区别：
   1. 即使在任意位置使用，文件执行时import都会自动提升至起始位置加载，require为任意位置使用与加载；
   2. 按需加载；
-

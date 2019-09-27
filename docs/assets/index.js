@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-27 15:52:39
+ * @LastEditTime: 2019-09-27 15:54:28
  */
 
 'use strict';
@@ -69,13 +69,11 @@ window.$docsify = {
             hook.doneEach(function() {
                 if (vm.route.path == '/home') {
                     let commitMsg = document.querySelector('#commitMsg');
-                    console.log(commitMsg);
                     if (commitMsg) {
                         fetch('https://api.github.com/repos/nkHub/docs/branches/master').then(res => res.json()).then(res => {
                             let msg = res.commit.commit.message;
                             let date = formateDate(new Date(res.commit.commit.committer.date).getTime());
                             commitMsg.innerHTML = date + '  ' + msg;
-                            console.log(date + '  ' + msg);
                         }).catch(e => {});
                     }
                 }

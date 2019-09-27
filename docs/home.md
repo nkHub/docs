@@ -3,7 +3,7 @@
  * @version: 1.0.0
  * @Author: nk
  * @Date: 2019-08-09 14:26:02
- * @LastEditTime: 2019-09-27 15:36:01
+ * @LastEditTime: 2019-09-27 15:47:43
  -->
 # 首页
 
@@ -14,7 +14,7 @@
 ![github](https://badgen.net/github/last-commit/nkHub/docs?icon=github&color=4ab8a1)
 ![stars](https://badgen.net/github/stars/nkHub/docs?icon=github&color=4ab8a1) 
 
-?> 更新信息：<span id="commitMsg"></span>
+?> 更新信息：<span id="commitMsg">信息拉取中...</span>
 
 * 常用
     - [css手册](http://css.doyoe.com/)

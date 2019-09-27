@@ -1,3 +1,8 @@
+<!--
+ * @version: 1.0.0
+ * @Date: 2019-08-08 20:44:32
+ * @LastEditTime: 2019-08-08 20:44:32
+ -->
 # Express
 
 ##### [express脚手架](http://www.expressjs.com.cn/starter/generator.html);
@@ -17,7 +22,7 @@
     // express配置
     const options = {
         dotfiles: 'ignore',
-        etag: true,
+        etag: false,
         extensions: ['htm', 'html'],
         index: '/',
         maxAge: '1d', //设置过期时间，否则正常403
@@ -36,6 +41,8 @@
         extended: true, 
         parameterLimit: 50000 
     }));
+
+    app.disable('etag'); //防止res.render状态码304
     
     //开启Gzip
     App.use(compression());

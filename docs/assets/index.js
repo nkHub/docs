@@ -1,7 +1,7 @@
 /*
  * @version: 1.0.0
  * @Date: 2019-09-26 14:51:10
- * @LastEditTime: 2019-09-27 15:54:28
+ * @LastEditTime: 2019-09-27 16:02:22
  */
 
 'use strict';
@@ -68,14 +68,16 @@ window.$docsify = {
             // 自动获取最新提交信息
             hook.doneEach(function() {
                 if (vm.route.path == '/home') {
-                    let commitMsg = document.querySelector('#commitMsg');
-                    if (commitMsg) {
-                        fetch('https://api.github.com/repos/nkHub/docs/branches/master').then(res => res.json()).then(res => {
-                            let msg = res.commit.commit.message;
-                            let date = formateDate(new Date(res.commit.commit.committer.date).getTime());
-                            commitMsg.innerHTML = date + '  ' + msg;
-                        }).catch(e => {});
-                    }
+                    setTimeout(function() {
+                        let commitMsg = document.querySelector('#commitMsg');
+                        if (commitMsg) {
+                            fetch('https://api.github.com/repos/nkHub/docs/branches/master').then(res => res.json()).then(res => {
+                                let msg = res.commit.commit.message;
+                                let date = formateDate(new Date(res.commit.commit.committer.date).getTime());
+                                commitMsg.innerHTML = date + '  ' + msg;
+                            }).catch(e => {});
+                        }
+                    }, 0);
                 }
             });
         }

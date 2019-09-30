@@ -122,8 +122,16 @@ main {
     z-index: 1!important;
 }
 
-article {
-    background-color: rgba(255, 255, 255, 0.4);
+.content:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
 }
 
 .github-corner {

@@ -119,7 +119,7 @@ function initParticlesJS() {
                     }
                 },
                 "color": {
-                    "value": "#999999"
+                    "value": "#aaaaaa"
                 },
                 "shape": {
                     "type": "circle",

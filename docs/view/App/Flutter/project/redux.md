@@ -2,7 +2,7 @@
 
 #### ReduxState
 
-```
+```dart
     import 'dart:math';
     import 'package:flutter/rendering.dart';
     import 'package:nk_app/**/themeColor.dart';
@@ -16,7 +16,7 @@
 
 #### Action
 
-```
+```dart
     //定义action
     enum Action { ThemeChange }
 
@@ -24,7 +24,7 @@
 
 #### reducer
 
-```
+```dart
     import 'dart:math';
     import 'package:nk_app/**/themeColor.dart';
     import 'package:nk_app/**/action.dart';
@@ -44,7 +44,7 @@
 
 #### 绑定至App
 
-```
+```dart
 
     import 'package:flutter/material.dart';
     import 'package:flutter_redux/flutter_redux.dart';
@@ -95,7 +95,7 @@
 
 #### 页面dispatch
 
-```
+```dart
     import 'package:flutter/material.dart';
     import 'package:flutter_redux/flutter_redux.dart';
     import 'package:nk_app/redux/ReduxState.dart';

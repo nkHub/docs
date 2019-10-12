@@ -11,7 +11,7 @@
 
 ##### mac环境变量
 
-```
+```bash
     open ~/.bash_profile    //打开环境变量配置文件
     source ~/.bash_profile  //编译变量配置
     

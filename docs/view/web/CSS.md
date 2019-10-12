@@ -12,7 +12,7 @@
 
 样式重置[reset.css](https://meyerweb.com/eric/tools/css/reset/)
 
-```
+```css
   // 样式重置
   input,button{
       -webkit-tap-highlight-color: transparent; // 清除iOS长按灰色蒙版

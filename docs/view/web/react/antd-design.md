@@ -6,7 +6,7 @@
 
 npm @next最新包
 
-```
+```javascript
   // Process JS with Babel.
   {
     test: /\.(js|jsx|mjs)$/,

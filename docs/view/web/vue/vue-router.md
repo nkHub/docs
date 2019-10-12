@@ -2,7 +2,7 @@
 
 #### 1. 配置
 
-```
+```javascript
     import Vue from 'vue'
     import Router from 'vue-router'
     import Home from '@/pages/home'
@@ -31,7 +31,7 @@
 
 #### 2. 路由拦截
 
-```
+```javascript
     import Vue from 'vue'
     import App from './App'
     import router from './router'

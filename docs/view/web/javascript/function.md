@@ -2,7 +2,7 @@
 
 ##### 1. 类型判断:
 
-```
+```javascript
     /**
     *   @description       类型判断
     *   @params { Any }    o 数据
@@ -15,7 +15,7 @@
 
 ##### 2. 转换查询字符串:
 
-```
+```javascript
     /**
     *   @description       查询字符串转换
     *   @params { Any }    o 数据对象
@@ -39,7 +39,7 @@
 
 ##### 3. 查询字符串解析:
 
-```
+```javascript
     /**
     *   @description       查询字符串转换
     *   @params { String }    s 查询字符串

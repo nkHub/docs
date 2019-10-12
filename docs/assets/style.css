@@ -137,3 +137,16 @@ main {
 .github-corner {
     z-index: 2!important;
 }
+
+
+/* code */
+
+.markdown-section pre,
+.markdown-section pre>code {
+    color: #cccccc;
+    background: #2d2d2d;
+}
+
+.token.operator {
+    background-color: transparent;
+}

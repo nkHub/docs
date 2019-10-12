@@ -1,6 +1,6 @@
 # vuex
 
-```
+```javascript
     import Vue from 'vue';
     import Vuex from 'vuex';
 

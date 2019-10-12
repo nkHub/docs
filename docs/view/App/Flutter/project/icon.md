@@ -12,7 +12,7 @@
 
 ##### 定义
 
-```
+```dart
     import 'package:flutter/cupertino.dart';
 
     Map weatherIconList = {
@@ -28,7 +28,7 @@
 
 ##### 使用
 
-```
+```dart
     import 'package:nk_app/**/icon.dart';
 
     ...

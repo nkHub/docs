@@ -2,7 +2,7 @@
 
 ##### 1. 自定义插件配置(插件名称：plugin)
 
-```
+```javascript
     'use strict';
     // jQuery插件
     (function ($) {

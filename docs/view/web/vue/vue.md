@@ -4,7 +4,7 @@
 
 *   1. npm init 初始化 package.json
 
-```
+```json
     {
         "name": "test",
         "version": "1.0.0",
@@ -55,7 +55,7 @@
 
 *   3. webpack.config.js文件
 
-```
+```javascript
     const path = require('path');
     const webpack = require('webpack');
     const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -128,7 +128,7 @@
 
 * 1. npm init 初始化 package.json
 
-```
+```json
     {
         "name": "m-cli",
         "version": "1.0.0",
@@ -185,7 +185,7 @@
 
 *   4. m文件
 
-```
+```javascript
     #!/usr/bin/env node
     const commander = require('commander')
 
@@ -200,7 +200,7 @@
 
 *   5. m-init文件
 
-```
+```javascript
     #!/usr/bin/env node
 
     const chalk = require('chalk')

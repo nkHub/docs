@@ -23,7 +23,7 @@
 
 #### 1. 连接与配置(mongodb.js)
 
-```
+```javascript
     const mongoose = require('mongoose');
     const url = 'mongodb://username:password@ip/database';
     mongoose.set( 'debug', true)
@@ -36,7 +36,7 @@
 
 #### 2. Model(user.js)
 
-```
+```javascript
     const mongoose = require('/config/mongodb');
     //表字段
     var UserSchema = new mongoose.Schema({
@@ -52,7 +52,7 @@
 
 #### 2. Interface(interface.js)
 
-```
+```javascript
     let User = require('/models/user');
 
     module.exports = async function(req,res){

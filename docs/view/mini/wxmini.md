@@ -8,7 +8,7 @@
 ### 1. 页面实例
 
 
-```
+```javascript
     const getPage = (route = 'default') => {
       return getCurrentPages().filter(page => page.route == route);
     }
@@ -16,7 +16,7 @@
 
 ### 2. 组件实例
 
-```
+```javascript
     onReady(){
       context.selectComponent(组件id);
     }

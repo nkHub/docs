@@ -7,14 +7,14 @@
 
 ###### 引入
 
-```
+```javascript
     //main.js
     import mock from './mock'
 ```
 
 ###### 使用([模板规则](https://github.com/nuysoft/Mock/wiki/Syntax-Specification))
 
-```
+```javascript
     // mock/index.js
     import Mock from 'mockjs'
     import home from './home'
@@ -25,7 +25,7 @@
 
 ###### 假数据
 
-```
+```javascript
     // mock/home.js 首页数据
 
     export default function home(options) {

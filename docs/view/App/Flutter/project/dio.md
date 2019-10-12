@@ -11,7 +11,7 @@
 
 ##### 定义
 
-```
+```dart
     import 'package:dio/dio.dart';
 
     // 默认配置
@@ -29,7 +29,7 @@
 
 ##### 使用
 
-```
+```dart
     import 'package:dio/dio.dart';
     import 'package:toast/toast.dart';
     import 'package:nk_app/**/dio.dart';

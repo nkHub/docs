@@ -4,7 +4,7 @@ QQ申请不下来，，暂时没有。微信和微博可用
 
 #### 1. 前端
 
-```
+```php
     const Appid = ######;
     const client_id = ######;
     let redirect = '';
@@ -36,7 +36,7 @@ QQ申请不下来，，暂时没有。微信和微博可用
 
 #### 2. 后端
 
-```
+```php
 <?php
 
 if(isset($_POST['type'])){

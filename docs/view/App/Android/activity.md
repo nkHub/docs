@@ -4,7 +4,7 @@
 
 清单文件manifest.xml的Application节点下添加activity节点，创建layout界面
 
-```
+```xml
   //清单文件manifest.xml
   <activity
     Android:name=".module.second.second"
@@ -14,6 +14,8 @@
       <category Android:name="Android.intent.category.DEFAULT" />
     </intent-filter>
   </activity>
+```
+```java
   ...
   //方式一（常用）
   Intent intent = new Intent(context,class);
@@ -45,7 +47,7 @@
 
 ##### 2.生命周期
 
-```
+```java
   public class MainAcivity extends BaseActivity{
     //首次创建
     @Override

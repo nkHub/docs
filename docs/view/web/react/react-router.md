@@ -2,7 +2,7 @@
 
 外部配置
 
-```
+```javascript
   import { HashRouter , Switch , Route } from 'react-router-dom';
 
   //路由方式 1.history import BrowserRouter
@@ -23,6 +23,6 @@
 
 页面使用redirect组件或props.history...手动跳转路由。
 
-```
+```html
   <NavLink to="/detail/1">详情页面</NavLink>
 ```

@@ -15,7 +15,7 @@
 
 ##### 1. 通用配置(App.js)
 
-```
+```javascript
     const compression = require('compression');
     const App = express();
 
@@ -50,7 +50,7 @@
 
 ##### 2. https配置(bin/www)
 
-```
+```javascript
     var App = require('../App');
     /**
     * https设置
@@ -64,7 +64,7 @@
 
 ##### 3. 文件上传(upload.js)
 
-```
+```javascript
     const formidable = require("formidable");
     const file = require('/utils/file'); //文件操作封装
 

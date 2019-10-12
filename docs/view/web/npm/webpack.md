@@ -2,7 +2,7 @@
 
 #### 1. 主要结构
 
-```
+```javascript
     module.export = {
         mode: 'production',      //开发模式production、development、none
         entry: {                 //编译入口
@@ -38,7 +38,7 @@
 
 ##### 1. Entrypoint undefined = index.html
 
-```
+```javascript
     stats: {
         children: false
     }
@@ -46,7 +46,7 @@
 
 ##### 2. 样式消失问题
 
-```
+```css
     .test{
         //正常编译
         display: -webkit-box;

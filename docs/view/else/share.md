@@ -2,7 +2,7 @@
 
 #### 1. 微信
 
-```
+```javascript
     //接口内
     const shareData = { //分享数据
         "imgUrl" : share_img,
@@ -41,8 +41,9 @@
 
 #### 2. QQ
 
-```
-    //移动端（QQ会自动抓取分享数据）
+移动端（QQ会自动抓取分享数据）
+
+```html
     <head>
         <meta charset="utf-8">
         <title></title>
@@ -52,14 +53,11 @@
         <meta itemprop="image" content="http://nikai.site/share/pic.jpg">
         <!-- QQ分享测试end -->
     </head>
-
-    //PC端
-    https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title=24国&url=url&desc=desc&summary=summary&pics=pics;
 ```
+PC端
+https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?title=24国&url=url&desc=desc&summary=summary&pics=pics;
 
 #### 3. 微博
 
-```
-    //PC端
-    http://v.t.sina.com.cn/share/share.php?title=title&url=url&content=utf-8&sourceUrl=url&pic=pic;
-```
+PC端
+http://v.t.sina.com.cn/share/share.php?title=title&url=url&content=utf-8&sourceUrl=url&pic=pic;

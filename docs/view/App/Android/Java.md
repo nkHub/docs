@@ -2,7 +2,7 @@
 
 ##### 1. 数组：
 
-```
+```java
   System.arraycopy( 数据源数组 , 数据源数组起始位置 , 替换数组 , 替换数组起始位置 , 替换个数);
   Arrays.sort(); //数组排序
 ```
@@ -41,7 +41,7 @@
 
 <p>a ) 抽象类无法实例化对象，除了包含抽象方法，其他与普通类相同</p>
 
-```
+```java
     abstract class 类名 {
 
     }
@@ -55,7 +55,7 @@
 
 <p>a ) 接口包含抽象函数与全局常量，其中抽象方法的 public 与 abstract 可省略(抽象类的抽象方法则不可以，否则默认 default 权限)</p>
 
-```
+```java
     interface 接口名称 {
         public static final 全局常量 = 值;
         void 抽象方法名称();
@@ -77,7 +77,7 @@
 <p>a ) public 方法名() throws Exception1, Exception2{} 调用时必须做异常处理（RuntimeException除外可以选择处理）</p>
 <p>b ) 三种方式</p>
 
-```
+```java
     try{
         ...
     }catch(Exception e){
@@ -106,7 +106,7 @@
 
 <p>a ) 动态定义数据类型</p>
 
-```
+```java
     class 类名称<标识符1,标识符2..>{
         类名称<标识符1,标识符2..> 对象名称 = new 类名称<标识符1,标识符2..>();
     }
@@ -114,14 +114,14 @@
 
 <p>b ) 接受泛型类的方法，可使用 ? 为动态数据类型</p>
 
-```
+```java
     ? Extends 设置必须为设定类型的子类
     ? Super 设置必须为设定类型的父类
 ```
 
 <p>d ) 泛型方法 (不推荐使用)</p>
 
-```
+```java
     public static <T> T test(T ... data){
         return data;
     }
@@ -129,7 +129,7 @@
 
 ##### 11. 枚举：
 
-```
+```java
     enum 枚举名称{
         枚举值1,枚举值2,枚举值3...
     }
@@ -139,7 +139,7 @@
 
 ##### 12. Annotation(注解)：
 
-```
+```java
     @Override         //方法复写
     @Deprecated       //方法过期
     @SuppressWarnings //压制警告

@@ -21,7 +21,7 @@
 
 #### 1. 连接与配置(redis.js)
 
-```
+```javascript
     'use strict';
     let redis = require('redis');
     let client = redis.createClient(6379,ip);

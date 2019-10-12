@@ -6,7 +6,7 @@
 
 ##### 2. 数据层绑定：
 
-```
+```javascript
   import { Provider } from 'react-redux';
   import configureStore from './redux/store';
 
@@ -30,7 +30,7 @@
 
 ##### 3. UI层绑定：
 
-```
+```javascript
   import { connect } from 'react-redux';
 
   const mapStateToProps = (state)=>{
@@ -63,7 +63,7 @@ React-thunk 使dispatch可接受函数（原来只接受对象）,可拓展多�
 
 i. 状态存储中心，store.js代码：
 
-```
+```javascript
   //通用const store = ApplyMiddleware(...middlewares)(createStore)(reducer, initialState);
 
   //实例
@@ -82,7 +82,7 @@ i. 状态存储中心，store.js代码：
 
 i. 模块操作合并，reducer.js代码如下
 
-```
+```javascript
   'use strict';
   import { combineReducers } from 'redux';
   //页面模块部分
@@ -108,7 +108,7 @@ ii. 单个页面模块部分，接受action返回新State;
 
 推荐使用: Object.assign({},state,需要修改的参数);生成新的State
 
-```
+```javascript
   const initialState = {};
   export default (state = initialState, action)=>{
     switch(action.type){
@@ -129,7 +129,7 @@ ii. 单个页面模块部分，接受action返回新State;
 
 ###### 4). action：
 
-```
+```javascript
   let action = {
     type: type,
     preload: preload,

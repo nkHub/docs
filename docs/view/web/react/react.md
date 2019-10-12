@@ -15,14 +15,14 @@
 
 [默认ES6方式导入](/view/web/ES6.md?id=_14-模块)。
 
-```
+```javascript
   import { Component } from 'react';
   import 'style.css';
 ```
 
 ##### 3. 渲染：
 
-```
+```javascript
   import ReactDom from 'react-dom';
   ReactDom.render(
     组件,
@@ -39,7 +39,7 @@ PureComponent组件相对于Component，已完成props与state的浅对比，优
 
 推荐使用以下ES6方式书写组件，此外还包含无状态组件以及高级组件等。
 
-```
+```javascript
   class 组件名(首字母必须大写) extends Component{
     //构造函数
     contructor(props){
@@ -77,14 +77,14 @@ PureComponent组件相对于Component，已完成props与state的浅对比，优
 
 4). 属性dangerouslySetInnerHTML对innerHTML的替代
 
-```
+```html
   <div dangerouslySetInnerHTML={{__html: html字符串}}></div>
 ```
 
 ##### 4. 事件：
 
 
-```
+```jsx
   ...
   render(){
     return (
@@ -103,14 +103,14 @@ PureComponent组件相对于Component，已完成props与state的浅对比，优
 
 ##### 5. props：
 
-```
+```html
   <组件名 参数名={参数} />  //组件可从this.props中获取传递的参数
 ```
 
 
 ###### [props类型检测](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
 
-```
+```javascript
   import ProTypes from “prop-types”;  //不推荐使用React.ProTypes
   组件名.propTypes={
     参数名: PropType.string…(.isRequired)
@@ -121,7 +121,7 @@ PureComponent组件相对于Component，已完成props与state的浅对比，优
 
 ##### 6. ref：
 
-```
+```jsx
   ...
   render(){
     return(

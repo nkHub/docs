@@ -20,16 +20,16 @@
 
 对应位置赋值
 
-```
-  { a } = { a : 1 }
+```javascript
+  let { a } = { a : 1 }
   console.log(a); // a = 1;
-  [ b, c ] = [ 1, 2 ];
+  let [ b, c ] = [ 1, 2 ];
   console.log(b); // b = 1;
 ```
 
 ##### 4. 模板字符串：
 
-```
+```javascript
   `字符串/HTML + ${ 变量名 }`
 ```
 
@@ -37,13 +37,13 @@
 
 函数体内不会绑定prototype原型对象
 
-```
+```javascript
   var 函数名 = (参数 = 默认值) => { 函数体 } ;
 ```
 
 ##### 6. 对象：
 
-```
+```javascript
   obj::fnName;  //对象::函数 绑定上下文，类似于 fn().bind(this)
   Object.keys( obj );   //获取对象键数组
   Object.values( obj ); //获取对象值数组
@@ -56,16 +56,16 @@
 
 不存在变量提升，super继承父级constructor方法(如无需修改则可不使用constructor方法)。
 
-```
+```javascript
  class Test extends Object{
-   <!-- 执行父级构造函数 -->
-   constructor(props){
-     super(props);
-   }
-   <!-- 自定义方法 -->
-   methods(){
+    //执行父级构造函数
+    constructor(props){
+      super(props);
+    }
+    //自定义方法
+    methods(){
 
-   }
+    }
  }
 ```
 
@@ -73,8 +73,8 @@
 
 Array.from可将类似格式转换为数组。
 
-```
-  {
+```javascript
+  let value = {
     0: { a : 1 },
     length: 1
   }
@@ -88,7 +88,7 @@ Array.from可将类似格式转换为数组。
 
 拓展运算符( ... name) 主要用于函数调用,将一个数组，变为参数序列,将name数组元素依次添加到外面
 
-```
+```javascript
   function test(...name){
     console.log(name); //参数列表数组
   }
@@ -98,7 +98,7 @@ Array.from可将类似格式转换为数组。
 
 ##### 9. Promise：
 
-```
+```javascript
   //正常处理
   new Promise((resolve,reject){
     resolve(); //异步操作成功
@@ -131,7 +131,7 @@ Map与传统“键-值”相对的“值-值”，数据结构;
 
 函数: 函数体内可使用 await调用Promise函数回调，实现异步函数同步写法，返回Promise对象。
 
-```
+```javascript
   async function(){
     let res = await ajax();
   }
@@ -141,7 +141,7 @@ Map与传统“键-值”相对的“值-值”，数据结构;
 
 generator类似于async, await换位yield，返回Promise对象。
 
-```
+```javascript
   function* Test(){
     yield response1;
     yield response2;
@@ -155,7 +155,7 @@ generator类似于async, await换位yield，返回Promise对象。
 
 '编译时加载/静态加载'不同于commonJS的'运行时加载'。
 
-```
+```javascript
   import * as name from 'fs'; //导入所有数据
   import { name } from 'fs'; //导入所有数据
 

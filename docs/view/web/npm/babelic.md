@@ -3,7 +3,7 @@
 将ES6代码转换为ES5的工具；
 配置文件: .babelic
 
-```
+```javascript
   {
     "presets": [],
     "plugins": []

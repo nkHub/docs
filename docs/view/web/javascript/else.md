@@ -7,7 +7,7 @@
 
 ##### [fetch请求](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)：
 
-```
+```javascript
     var controller = new AbortController();
     var options = {
         method: GET | POST,

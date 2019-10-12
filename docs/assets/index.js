@@ -75,7 +75,9 @@ window.$docsify = {
                                 let msg = res.commit.commit.message;
                                 let date = formateDate(new Date(res.commit.commit.committer.date).getTime());
                                 commitMsg.innerHTML = date + '  ' + msg;
-                            }).catch(e => {});
+                            }).catch(e => {
+                                commitMsg.innerHTML = '信息拉取失败';
+                            });
                         }
                     }, 0);
                 }

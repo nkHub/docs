@@ -80,7 +80,7 @@ window.$docsify = {
                     }, 0);
                 }
                 if (vm.route.path != '/') {
-                    initParticlesJS();
+                    // initParticlesJS();
                 }
             });
         }

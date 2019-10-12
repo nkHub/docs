@@ -8,4 +8,5 @@
 * [Flutter](view/App/Flutter/Flutter.md)
 * [搭建](view/App/Flutter/build.md)
 * [运行与调试](view/App/Flutter/run.md)
+* [项目](view/App/Flutter/project/project.md)
 * [配置](view/config/config.md)

@@ -6,9 +6,9 @@
 
 'use strict';
 // 缓存
-// if (typeof navigator.serviceWorker !== 'undefined') {
-//     navigator.serviceWorker.register('sw.js')
-// }
+if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+}
 // 配置
 window.$docsify = {
     el: '#main',

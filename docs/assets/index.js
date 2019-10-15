@@ -6,9 +6,9 @@
 
 'use strict';
 // 缓存
-if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js')
-}
+// if (typeof navigator.serviceWorker !== 'undefined') {
+//     navigator.serviceWorker.register('sw.js')
+// }
 // 配置
 window.$docsify = {
     el: '#main',
@@ -41,17 +41,7 @@ window.$docsify = {
         tabHeadings: true
     },
     markdown: {
-        smartypants: true,
-        renderer: {
-            code: function(code, lang) {
-                if (lang === "mermaid") {
-                    return (
-                        '<div class="mermaid">' + mermaid.render(lang, code) + "</div>"
-                    );
-                }
-                return this.origin.code.apply(this, arguments);
-            }
-        }
+        smartypants: true
     },
     copyCode: {
         buttonText: '复制到粘贴板',

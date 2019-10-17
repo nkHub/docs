@@ -14,6 +14,7 @@
     <meta name="description" content="个人备忘文档">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
     <link rel="stylesheet" href="//unpkg.com/vuep/dist/vuep.css">
     <link rel="stylesheet" href="//unpkg.com/prismjs/themes/prism.css">
     <link rel="stylesheet" href="//unpkg.com/prismjs/themes/prism-tomorrow.css">
@@ -29,12 +30,92 @@
             </div>
         </div>
     </div>
-    <script src="assets/index.js"></script>
+    <script>
+        // 配置
+        window.$docsify = {
+            el: '#main',
+            homepage: '/home.md',
+            name: '个人文档',
+            nameLink: '#/home',
+            repo: 'https://github.com/nkHub',
+            loadNavbar: true,
+            coverpage: true,
+            onlyCover: true,
+            coverpage: 'cover.md',
+            loadSidebar: true,
+            maxLevel: 3,
+            auto2top: true,
+            notFoundPage: true,
+            notFoundPage: '404.md',
+            search: 'auto',
+            search: {
+                maxAge: 86400000,
+                path: 'auto',
+                placeholder: '搜索',
+                noData: '找不到结果!',
+                depth: 6
+            },
+            tabs: {
+                persist: true,
+                sync: true,
+                theme: 'classic',
+                tabComments: true,
+                tabHeadings: true
+            },
+            markdown: {
+                renderer: {
+                    code: function(code, lang) {
+                        if (lang === "mermaid") {
+                            return (
+                                '<div class="mermaid">' + mermaid.render(lang, code) + "</div>"
+                            );
+                        }
+                        return this.origin.code.apply(this, arguments);
+                    }
+                }
+            },
+            copyCode: {
+                buttonText: '复制到粘贴板',
+                errorText: '错误',
+                successText: '复制成功'
+            },
+            pagination: {
+                previousText: '上一章节',
+                nextText: '下一章节',
+                crossChapter: true
+            },
+            plugins: [
+                function(hook, vm) {
+                    // 自动获取最新提交信息
+                    hook.doneEach(function() {
+                        if (vm.route.path == '/home') {
+                            setTimeout(function() {
+                                let commitMsg = document.querySelector('#commitMsg');
+                                if (commitMsg) {
+                                    fetch('https://api.github.com/repos/nkHub/docs/branches/master').then(res => res.json()).then(res => {
+                                        let msg = res.commit.commit.message;
+                                        let date = formateDate(new Date(res.commit.commit.committer.date).getTime());
+                                        commitMsg.innerHTML = date + '  ' + msg;
+                                    }).catch(e => {
+                                        commitMsg.innerHTML = '信息拉取失败';
+                                    });
+                                }
+                            }, 0);
+                        }
+                        if (vm.route.path != '/') {
+                            initParticlesJS();
+                        }
+                    });
+                }
+            ]
+        }
+    </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/external-script.js"></script>
     <script src="//unpkg.com/vue/dist/vue.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
     <script src="//unpkg.com/docsify-copy-code"></script>
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
@@ -45,7 +126,18 @@
     <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-jsx.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-dart.min.js"></script>
-    <!-- <script src="assets/particles.min.js"></script> -->
+    <script src="assets/particles.min.js"></script>
+    <script src="assets/index.js"></script>
+    <script>
+        mermaid.initialize({
+            startOnLoad: false
+        });
+        // 缓存
+        // if (typeof navigator.serviceWorker !== 'undefined') {
+        //     navigator.serviceWorker.register('sw.js')
+        // }
+    </script>
+
 </body>
 
 </html>

@@ -14,9 +14,9 @@
 #### mac真机调试iOS
 
 ###### xcode设置添加账户
-![flutter-run-ios-account](https://nikai.site/docs/flutter-run-ios-account.jpg)
+![flutter-run-ios-account](http://q04qo52jx.bkt.clouddn.com/flutter-run-ios-account.jpg)
 
 ###### 项目设置Bundle identifier、选择添加的账户
-![flutter-run-ios-siging](https://nikai.site/docs/flutter-run-ios-siging.jpg)
+![flutter-run-ios-siging](http://q04qo52jx.bkt.clouddn.com/flutter-run-ios-siging.jpg)
 
 marked: mac 10.14.6 & xcode 10.3 & Android studio 3.5 (19.09.05)

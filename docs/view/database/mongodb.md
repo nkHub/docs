@@ -21,7 +21,7 @@
 
 创建集合: db.createCollection(集合名称,参数)
 
-![create_options](http://q04qo52jx.bkt.clouddn.com/monogoDB_create_options.png)
+![create_options](https://www.nikai.site/docs/monogoDB_create_options.png)
 
 显示数据库所有集合: show collections
 

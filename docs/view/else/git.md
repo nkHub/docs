@@ -5,7 +5,7 @@
  -->
 # git常用命令
 
-![git](http://q04qo52jx.bkt.clouddn.com/docs/git.jpg)
+![git](https://www.nikai.site/docs/docs/git.jpg)
 
 ###### 其他
 

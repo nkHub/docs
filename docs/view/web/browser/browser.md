@@ -65,7 +65,7 @@ sequenceDiagram
 
 分类：Service Workers、Memory Cache 内存缓存(强缓存)、Disk Cache 磁盘缓存(强缓存)、Push Cache。
 
-![这流程画不出来┗|｀O′|┛ 嗷~~,只能这样了将就着看吧](https://www.nikai.site/cache.jpg)
+![这流程画不出来┗|｀O′|┛ 嗷~~,只能这样了将就着看吧](https://cdn.nikai.site/cache.jpg)
 
 ##### 5. 浏览器渲染：
 

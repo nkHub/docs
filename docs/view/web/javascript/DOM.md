@@ -35,4 +35,7 @@
         c)textContent 获取内容加空格
         d)outerHTML 内容、内部标签和本身标签
     9、获取css样式 window.getComputedStyle(obj,伪类)
+
+#### 问题
+    1. querySelector不支持属性选择器时值为数字
     

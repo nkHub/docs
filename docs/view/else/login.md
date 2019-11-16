@@ -4,7 +4,7 @@ QQ申请不下来，，暂时没有。微信和微博可用
 
 #### 1. 前端
 
-```php
+```javascript
     const Appid = ######;
     const client_id = ######;
     let redirect = '';

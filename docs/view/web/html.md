@@ -6,4 +6,6 @@
 # HTML
 
 * js工具
-    - [pdf.js](https://mozilla.github.io/pdf.js/)
+    - [pdf](https://mozilla.github.io/pdf.js/)
+    - [粘贴板](http://www.clipboardjs.cn/)
+    - [下载](http://danml.com/download.html)

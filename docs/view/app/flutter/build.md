@@ -52,12 +52,12 @@
 ##### Android Stuido
 
 首选项 => 插件 搜索Flutter与Dart
-![flutter-Android-plugins](https://cdn.nikai.site/flutter-android-plugins.jpg)
+![flutter-Android-plugins](https://cdn.nikai.site/flutter-android-plugins.jpg?imageslim)
 
 首选项 => 语言与框架 => Flutter或Dart设置sdk路径 
-![flutter-Android-set](https://cdn.nikai.site/flutter-android-set.jpg)
+![flutter-Android-set](https://cdn.nikai.site/flutter-android-set.jpg?imageslim)
 
 -----
 
 ##### 安装完成
-![flutter-success](https://cdn.nikai.site/flutter-success.jpg)
+![flutter-success](https://cdn.nikai.site/flutter-success.jpg?imageslim)

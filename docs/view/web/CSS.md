@@ -153,4 +153,5 @@ hack       | IE6| IE7| IE8| IE9| IE10| 现代
 ##### 5.备忘
 
     1、黑暗模式
-        @media(prefers-color-scheme: dark)
+        CSS: @media(prefers-color-scheme: dark)
+        JS:  window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches

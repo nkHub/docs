@@ -21,8 +21,6 @@
 
 ### 如果转换失败替换一下文件
 
-wx2my.js
-[wx2my](https://cdn.nikai.site/wx2my.js ':include :type=javascript text')
+[wx2my.js](https://cdn.nikai.site/wx2my.js ':include :type=javascript text')
 
-Behavior.js
-[Behavior](https://cdn.nikai.site/Behavior.js ':include :type=javascript text')
+[Behavior.js](https://cdn.nikai.site/Behavior.js ':include :type=javascript text')

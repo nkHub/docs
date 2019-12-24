@@ -149,3 +149,8 @@ hack       | IE6| IE7| IE8| IE9| IE10| 现代
             1）是两者方向相反
             2）给队首元素添加专有属性hack，一半的margin。例如：_margin-left: 50px;
             3）IE中出现浮动后与浏览器之间有3px的间隙。
+
+##### 5.备忘
+
+    1、黑暗模式
+        @media(prefers-color-scheme: dark)

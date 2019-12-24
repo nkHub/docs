@@ -11,7 +11,7 @@
 
 ``` javascript
     const getPage = (route = 'default') => {
-        return getCurrentPages().filter(page => page.route == route);
+        return getCurrentPages().find(page => page.route == route);
     }
 ```
 

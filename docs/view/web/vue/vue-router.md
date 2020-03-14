@@ -45,7 +45,7 @@
                 await state.dispatch('initUserInfo');
                 // 动态添加的路由
                 let Approuter = new AppRouter(list);
-                router.addRoutes(Approuter.tree);
+                router.addRoutes(Approuter.root());
                 // 获取之前的hash值（如果存在直接跳转之前的路由）
                 let before = window.location.hash.substring(1);
                 let redirect = !before.includes('login')?before:defaultRoutePath;

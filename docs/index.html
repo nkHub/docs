@@ -31,6 +31,12 @@
         </div>
     </div>
     <script>
+        // 模板替换
+        function templateReplace(text, obj) {
+            let reg = /\{(.+?)\}/g,
+                reg2 = /(?<=\{)[^}]*(?=\})/g;
+            return text.replace(reg, v => obj[v.match(reg2)[0]] || v);
+        }
         // 配置
         window.$docsify = {
             el: '#main',
@@ -63,6 +69,11 @@
                 tabComments: true,
                 tabHeadings: true
             },
+            // 全局变量
+            variables: {
+                home: '首页',
+                test: '测试地址'
+            },
             markdown: {
                 renderer: {
                     code: function(code, lang) {
@@ -72,6 +83,10 @@
                             );
                         }
                         return this.origin.code.apply(this, arguments);
+                    },
+                    // 全局变量模板替换
+                    text: function(text) {
+                        return templateReplace(text, window.$docsify.variables);
                     }
                 }
             },
@@ -103,9 +118,6 @@
                                 }
                             }, 0);
                         }
-                        if (vm.route.path != '/') {
-                            // initParticlesJS();
-                        }
                     });
                 }
             ]
@@ -128,7 +140,6 @@
     <script src="//unpkg.com/prismjs/components/prism-jsx.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-dart.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-nginx.js"></script>
-    <!-- <script src="assets/particles.min.js"></script> -->
     <script src="assets/index.js"></script>
     <script>
         mermaid.initialize({

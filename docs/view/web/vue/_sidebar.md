@@ -1,5 +1,6 @@
 * [vue](view/web/vue/vue.md)
 * [vue-router](view/web/vue/vue-router.md)
 * [vuex](view/web/vue/vuex.md)
+* [vue.config.js](view/web/vue/vue-config.md)
 * [vue脚手架](view/web/vue/vue-build.md)
 * [配置](view/config/config.md)

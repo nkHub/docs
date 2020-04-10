@@ -59,7 +59,8 @@ package.json
 
 .env.apha
 
-<! 注意: NODE_ENV不写production会默认为开发模式（cssinjs）,文件名可自定义，命令-- mode 添加
+!> 注意: NODE_ENV不写production会默认为开发模式（cssinjs）,文件名可自定义，命令-- mode 添加
+
 ```
     NODE_ENV=production
     VUE_APP_TEST=测试环境变量 

@@ -15,7 +15,7 @@
  * Register service worker.
  * ========================================================== */
 
-const RUNTIME = 'docs-v1.0.1'
+const RUNTIME = 'docs-v1.0.2'
 const HOSTNAME_WHITELIST = [
     self.location.hostname,
     'fonts.gstatic.com',

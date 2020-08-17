@@ -21,10 +21,10 @@
 
 ### 如果转换失败替换一下文件
 
-1. wx2my.js
+1. [wx2my.js](https://cdn.nikai.site/wx2my.js)
 
-[wx2my.js](https://cdn.nikai.site/wx2my.js ':include :type=code javascript')
+<!-- [wx2my.js](https://cdn.nikai.site/wx2my.js ':include :type=code javascript') -->
 
-2. Behavior.js
+2. [Behavior.js](https://cdn.nikai.site/Behavior.js)
 
-[Behavior.js](https://cdn.nikai.site/Behavior.js ':include :type=code javascript')
+<!-- [Behavior.js](https://cdn.nikai.site/Behavior.js ':include :type=code javascript') -->

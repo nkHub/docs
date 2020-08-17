@@ -7,5 +7,5 @@
 
 * js工具
     - [pdf](https://mozilla.github.io/pdf.js/)
-    - [粘贴板](http://www.clipboardjs.cn/)
-    - [下载](http://danml.com/download.html)
+    - [clipboard](http://www.clipboardjs.cn/)
+    - [download](http://danml.com/download.html)

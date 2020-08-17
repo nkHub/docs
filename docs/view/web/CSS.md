@@ -18,10 +18,10 @@
       -webkit-tap-highlight-color: transparent; // 清除iOS长按灰色蒙版
   }
 
-  // input::-webkit-input-placeholder,
-  // textarea::-webkit-input-placeholder {
-　//　  color: #000;
-  // }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+　　  color: #000;
+  }
 
   //flex布局
   .flex-spb{

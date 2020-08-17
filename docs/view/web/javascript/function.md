@@ -20,17 +20,17 @@
     *   @description       查询字符串转换
     *   @params { Any }    o 数据对象
     **/
-    function queryStringify(o){
+    function queryStringify(data){
         let query = "";
         for (let key in data) {
             if (assert(data[key], 'Array|Object')) {
                 for(let i in data[key]){
                     let obj = {};
                     obj[key+'['+ i +']'] = data[key][i];
-                    query += t.querydeep(obj) + '&'; //递归
+                    query += queryStringify(obj) + '&'; //递归
                 }
             } else {
-                query += `${key}=${encodeURIComponent(data[key])}&`;
+                query += `${key}=${data[key]}&`;
             }
         }
         return query.slice(0, query.length - 1);
@@ -43,9 +43,10 @@
     /**
     *   @description       查询字符串转换
     *   @params { String }    s 查询字符串
+    *   @params { String }    mark 字符串拆解间隔符
     **/
-    function queryParse(s){
-        let d = {}, a = s.split('&');
+    function queryParse(s, mark = '&'){
+        let d = {}, a = s.split(mark);
         a.forEach(item => {
             let ia = item.split('='),
                 key = ia[0].split('[').map(i => i.replace(/\]/g,'')),

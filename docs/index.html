@@ -33,9 +33,9 @@
     <script>
         // 模板替换
         function templateReplace(text, obj) {
-            let reg = new RegExp('\{(.+?)\}','g'),
-                reg2 = new RegExp('(?<=\{)[^}]*(?=\})','g');
-            return text.replace(reg, v => obj[v.match(reg2)[0]] || v);
+            let keys = text.match('\{(.+?)\}','g');
+            if(!keys)return text;
+            return text.replace(keys[0], obj[keys[1]]);
         }
         // 配置
         window.$docsify = {

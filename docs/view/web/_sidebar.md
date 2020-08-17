@@ -4,7 +4,7 @@
  * @LastEditTime: 2019-09-25 22:30:58
  -->
 * [浏览器](view/web/browser/browser.md)
-* [HTML](view/web/HTML.md)
+* [HTML](view/web/html.md)
 * [CSS](view/web/CSS.md)
 * [JavaScript](view/web/javascript/JavaScript.md)
 * [jquery](view/web/jquery.md)

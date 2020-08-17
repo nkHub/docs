@@ -146,9 +146,9 @@
             startOnLoad: false
         });
         // 缓存
-        // if (typeof navigator.serviceWorker !== 'undefined') {
-        //     navigator.serviceWorker.register('sw.js')
-        // }
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw.js')
+        }
     </script>
 
 </body>

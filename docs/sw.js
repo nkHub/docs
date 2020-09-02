@@ -7,7 +7,7 @@
 
 'use strict';
 
-const RUNTIME = 'docs-v1.0.1'
+const RUNTIME = 'docs-v1.0.4'
 
 // 缓存的域名
 const HOSTNAME = [

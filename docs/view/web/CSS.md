@@ -52,7 +52,7 @@
 
   // 屏蔽事件
   .no-event{
-      pointer-events：none;
+      pointer-events: none;
   }
 
   // 清除滚动条

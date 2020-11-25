@@ -23,14 +23,14 @@
   # 创建容器
   sudo docker create 
     -name 容器别名  
-    -p 容器端口:外部端口     # 端口映射
+    -p 外部端口:容器端口     # 端口映射
     --link 容器别名/容器id  # 容器关联
     -expose 端口号         # 暴露端口 
     镜像名称:版本
   # 启动容器
   sudo docker start 容器别名
   # 一步创建并启动容器
-  sudo docker run --name 容器别名 -d 镜像名称:版本
+  sudo docker run --name 容器别名 -dit 镜像名称:版本 // 使用-d是无法启动
 ```
 
 #### 容器管理
